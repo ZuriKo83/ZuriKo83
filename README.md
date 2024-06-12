@@ -6,8 +6,12 @@ Developer researching to create beneficial games
 
 🛠️ Stacks
 
-<img src="https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=C&logoColor=white"/> <img src="https://img.shields.io/badge/-blue?style=flat-square&logo=c%23"/> <img src="https://img.shields.io/badge/Java-orange?style=flat-square"/> <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/000000/java-coffee-cup-logo.png" alt="java-coffee-cup-logo"/> 
+<img src="https://img.shields.io/badge/-A8B9CC?style=flat-square&logo=C&logoColor=white"/> <img src="https://img.shields.io/badge/-blue?style=flat-square&logo=c%23"/> <img src="https://img.shields.io/badge/-3766AB?style=flat-square&logo=Python&logoColor=white"/>
 
-<img src=""/> 
+💪🏼 Tools 
 
-https://img.icons8.com/?size=100&id=103144&format=png&color=000000
+ <img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=flat-square&logo=Visual Studio Code&logoColor=white"/> <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/>
+
+🐱 About Me
+
+[![Gmail Badge](https://img.shields.io/badge/Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=mailto:drkoby0803@gmail.com)](drkoby0803@gmail.com)
