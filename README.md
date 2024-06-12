@@ -1,4 +1,7 @@
-## Welcome to my Git 👋
-#I'm Byungyeon Ko
+### Welcome to my Git 👋
+I'm Zuri Ko.
+
+####Game Developer
+Developer researching to create beneficial games
 
 
