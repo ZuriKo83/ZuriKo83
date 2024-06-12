@@ -6,4 +6,4 @@ Developer researching to create beneficial games
 
 🛠️ Stacks
 
-<img src=""C:\Users\User\Downloads\csharp.svg""/>
+<img src="csharp"/>
