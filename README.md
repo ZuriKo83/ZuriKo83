@@ -6,4 +6,4 @@ Developer researching to create beneficial games
 
 🛠️ Stacks
 
-<img src="https://img.shields.io/badge/c-#A8B9CC?style=flat-square&logo=c&logoColor=#A8B9CC"/>
+<img src="https://img.shields.io/badge/c-#A8B9CC?style=flat-square&logo=c&logoColor=white"/>
