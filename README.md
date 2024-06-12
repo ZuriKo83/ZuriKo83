@@ -1,7 +1,7 @@
 ### Welcome to my Git 👋
 I'm Zuri Ko
 
-#### Game Developer
+#### Game Developer / Artist
 Developer researching to create beneficial games
 
 🛠️ Stacks
