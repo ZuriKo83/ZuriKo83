@@ -1,2 +1,4 @@
-## Hi there 👋
+## Welcome to my Git 👋
+#I'm Byungyeon Ko
+
 
