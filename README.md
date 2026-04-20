@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:05070d,50:00ff88,100:00bfff&height=300&section=header&text=Byungyeon%20Ko&fontColor=ffffff&fontSize=52&animation=fadeIn&fontAlignY=38&desc=Cybersecurity%20Student%20%7C%20Building%20Future%20Security%20Skills&descAlignY=58"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:05070d,50:00ff88,100:00bfff&height=260&section=header&text=Byungyeon%20Ko&fontColor=ffffff&fontSize=48&animation=fadeIn&fontAlignY=38&desc=Malware%20Analysis%20%7C%20Threat%20Intel%20%7C%20Security%20Automation&descAlignY=58"/>
 
 # Welcome to my GitHub 👋
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1200&color=00FF88&center=true&vCenter=true&width=800&lines=Cybersecurity+Student;Malware+Analysis;Threat+Intelligence;Linux+Security;Security+Automation"/>
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=1200&color=00FF88&center=true&vCenter=true&width=700&lines=Cybersecurity+Student;Building+Real+Security+Projects;Learning+Every+Day"/>
 
 ![](https://komarev.com/ghpvc/?username=ZuriKo83\&style=for-the-badge\&color=00ff88\&label=PROFILE+VIEWS)
 ![](https://img.shields.io/github/followers/ZuriKo83?style=for-the-badge\&color=00bfff\&label=FOLLOWERS)
@@ -17,63 +17,25 @@
 
 ## About Me
 
-```text id="v4u203"
-Build real things.
-Learn every day.
+```text id="l2md7f"
 Think like an attacker.
-Defend like an engineer.
+Build like an engineer.
+Grow through execution.
 ```
 
 </div>
 
-* Focused on Malware Analysis / Threat Intel / Blue Team
-* Interested in Security Engineering and Automation
-* Building labs, tools, and practical projects
-* Growing through consistent execution
+* Cybersecurity student focused on practical skills
+* Interested in Malware Analysis / Threat Intel / Blue Team
+* Building tools, labs, and automation systems
 
 ---
 
 <div align="center">
 
-## Tech Arsenal
+## Tech Stack
 
-<p>
 <img src="https://skillicons.dev/icons?i=python,bash,c,linux,docker,git,vscode"/>
-</p>
-
-</div>
-
----
-
-<div align="center">
-
-## Security Tools
-
-<p>
-<img src="https://img.shields.io/badge/Burp%20Suite-ff6600?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white"/>
-<img src="https://img.shields.io/badge/Nmap-00457C?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Metasploit-005f99?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/YARA-1d3557?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Sigma-00ff88?style=for-the-badge&logoColor=black"/>
-</p>
-
-</div>
-
----
-
-<div align="center">
-
-## Currently Learning
-
-<p>
-<img src="https://img.shields.io/badge/Malware%20Analysis-00ff88?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/YARA%20Rules-00bfff?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/SIEM%20Detection-00ff88?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Windows%20Internals-00bfff?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Linux%20Hardening-00ff88?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Threat%20Hunting-00bfff?style=for-the-badge"/>
-</p>
 
 </div>
 
@@ -83,12 +45,12 @@ Defend like an engineer.
 
 ## Active Projects
 
-```text id="z8e511"
-Malware Sandbox Lab          ███████░░░ 70%
-Threat Intel Dashboard       ██████░░░░ 60%
-Security Automation Toolkit  █████░░░░░ 50%
-OSINT Monitoring System      ████░░░░░░ 40%
-```
+| Project                     | Status      |
+| --------------------------- | ----------- |
+| Malware Sandbox Lab         | In Progress |
+| Threat Intel Dashboard      | Active      |
+| Security Automation Toolkit | Building    |
+| OSINT Monitoring System     | Researching |
 
 </div>
 
@@ -96,9 +58,21 @@ OSINT Monitoring System      ████░░░░░░ 40%
 
 <div align="center">
 
-## GitHub Analytics
+## Currently Learning
 
-![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ZuriKo83\&theme=github_dark)
+<img src="https://img.shields.io/badge/Malware%20Analysis-00ff88?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/YARA-00bfff?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Windows%20Internals-00ff88?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Linux%20Hardening-00bfff?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/SIEM-00ff88?style=for-the-badge"/>
+
+</div>
+
+---
+
+<div align="center">
+
+## GitHub Stats
 
 ![](https://github-readme-stats.vercel.app/api?username=ZuriKo83\&show_icons=true\&theme=tokyonight\&hide_border=true\&bg_color=0d1117)
 
@@ -120,32 +94,12 @@ OSINT Monitoring System      ████░░░░░░ 40%
 
 <div align="center">
 
-## Trophy Showcase
-
-![](https://github-profile-trophy.vercel.app/?username=ZuriKo83\&theme=matrix\&no-frame=true\&row=1\&column=6)
-
-</div>
-
----
-
-<div align="center">
-
-## Snake Contribution Animation
+## Snake Animation
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ZuriKo83/ZuriKo83/output/github-contribution-grid-snake-dark.svg">
   <img alt="snake animation" src="https://raw.githubusercontent.com/ZuriKo83/ZuriKo83/output/github-contribution-grid-snake.svg">
 </picture>
-
-</div>
-
----
-
-<div align="center">
-
-## Quote
-
-![](https://quotes-github-readme.vercel.app/api?type=horizontal\&theme=dark)
 
 </div>
 
@@ -165,6 +119,6 @@ OSINT Monitoring System      ████░░░░░░ 40%
 
 <div align="center">
 
-### Learn relentlessly. Build visibly. Grow daily.
+### Learn relentlessly. Build visibly.
 
 </div>
