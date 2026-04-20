@@ -1,76 +1,105 @@
-md id="e3mk2a"
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:00ff88&height=220&section=header&text=Byungyeon%20Ko&fontColor=ffffff&fontSize=42&animation=fadeIn&fontAlignY=38&desc=Cybersecurity%20Student%20%7C%20Future%20Security%20Engineer&descAlignY=58"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:05070d,50:00ff88,100:00bfff&height=300&section=header&text=Byungyeon%20Ko&fontColor=ffffff&fontSize=52&animation=fadeIn&fontAlignY=38&desc=Cybersecurity%20Student%20%7C%20Building%20Future%20Security%20Skills&descAlignY=58"/>
 
 # Welcome to my GitHub 👋
 
-**Cybersecurity Student**  
-Focused on Malware Analysis, Threat Intelligence, Linux Security, and Security Automation.
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=00FF88&center=true&vCenter=true&width=800&lines=Cybersecurity+Student;Malware+Analysis;Threat+Intelligence;Linux+Security;Security+Automation;Always+Learning+Always+Building"/>
 
-![](https://komarev.com/ghpvc/?username=YOUR_ID&style=for-the-badge&color=00ff88)
+![](https://komarev.com/ghpvc/?username=YOUR_ID\&style=for-the-badge\&color=00ff88\&label=PROFILE+VIEWS)
+![](https://img.shields.io/github/followers/YOUR_ID?style=for-the-badge\&color=00bfff)
+![](https://img.shields.io/github/stars/YOUR_ID?style=for-the-badge\&color=00ff88)
 
 </div>
 
 ---
 
+<div align="center">
+
 ## About Me
 
-text
-Security-minded developer building practical labs,
-automation tools, and analysis environments.
+```text id="x4g2p9"
+Build real things.
+Learn every day.
+Think like an attacker.
+Defend like an engineer.
+```
 
+</div>
 
-* Interested in Blue Team / Threat Intel / Malware Research
-* Building hands-on projects with Python & Linux
-* Focused on growth through real implementation
+* Focused on Malware Analysis / Threat Intel / Blue Team
+* Interested in Security Engineering and Automation
+* Building labs, tools, and security projects
+* Growing through consistent execution
+
+---
+
+<div align="center">
+
+## Tech Arsenal
+
+</div>
+
+<p align="center">
+<img src="https://skillicons.dev/icons?i=python,bash,c,linux,docker,git,vscode"/>
+</p>
 
 ---
 
-## Tech Stack
-
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
-<img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white"/>
-<img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black"/>
-<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
-<img src="https://img.shields.io/badge/Git-181717?style=for-the-badge&logo=git&logoColor=white"/>
-
----
+<div align="center">
 
 ## Security Tools
 
+</div>
+
+<p align="center">
 <img src="https://img.shields.io/badge/Burp%20Suite-ff6600?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white"/>
 <img src="https://img.shields.io/badge/Nmap-00457C?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Metasploit-005f99?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Security-00ff88?style=for-the-badge&logo=hackthebox&logoColor=black"/>
+<img src="https://img.shields.io/badge/YARA-1d3557?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Sigma-00ff88?style=for-the-badge&logoColor=black"/>
+</p>
 
 ---
+
+<div align="center">
 
 ## Currently Learning
 
-* Malware Analysis
-* YARA Rules
-* SIEM Detection
-* Windows Internals
-* Linux Hardening
-* Threat Hunting
+</div>
+
+<p align="center">
+<img src="https://img.shields.io/badge/Malware%20Analysis-00ff88?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/YARA%20Rules-00bfff?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/SIEM%20Detection-00ff88?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Windows%20Internals-00bfff?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Linux%20Hardening-00ff88?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Threat%20Hunting-00bfff?style=for-the-badge"/>
+</p>
 
 ---
+
+<div align="center">
 
 ## Active Projects
 
-* Malware Sandbox Lab **(In Progress)**
-* Threat Intel Dashboard **(Active)**
-* Security Automation Toolkit **(Building)**
-* OSINT Monitoring System **(Researching)**
+</div>
+
+```text id="4u5a2j"
+Malware Sandbox Lab          ███████░░░ 70%
+Threat Intel Dashboard       ██████░░░░ 60%
+Security Automation Toolkit  █████░░░░░ 50%
+OSINT Monitoring System      ████░░░░░░ 40%
+```
 
 ---
 
-## GitHub Stats
-
 <div align="center">
+
+## GitHub Analytics
+
+![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=YOUR_ID\&theme=github_dark)
 
 ![](https://github-readme-stats.vercel.app/api?username=YOUR_ID\&show_icons=true\&theme=tokyonight\&hide_border=true\&bg_color=0d1117)
 
@@ -80,11 +109,27 @@ automation tools, and analysis environments.
 
 ---
 
+<div align="center">
+
 ## Contribution Graph
 
 ![](https://github-readme-activity-graph.vercel.app/graph?username=YOUR_ID\&theme=react-dark\&hide_border=true\&bg_color=0d1117\&color=00ff88\&line=00bfff\&point=ffffff)
 
+</div>
+
 ---
+
+<div align="center">
+
+## Trophy Showcase
+
+![](https://github-profile-trophy.vercel.app/?username=YOUR_ID\&theme=matrix\&no-frame=true\&row=1\&column=6)
+
+</div>
+
+---
+
+<div align="center">
 
 ## Snake Contribution Animation
 
@@ -93,7 +138,21 @@ automation tools, and analysis environments.
   <img alt="snake animation" src="https://raw.githubusercontent.com/YOUR_ID/YOUR_ID/output/github-contribution-grid-snake.svg">
 </picture>
 
+</div>
+
 ---
+
+<div align="center">
+
+## Quote
+
+![](https://quotes-github-readme.vercel.app/api?type=horizontal\&theme=dark)
+
+</div>
+
+---
+
+<div align="center">
 
 ## Contact
 
@@ -101,10 +160,12 @@ automation tools, and analysis environments.
 <img src="https://img.shields.io/badge/Gmail-d14836?style=for-the-badge&logo=gmail&logoColor=white"/>
 </a>
 
+</div>
+
 ---
 
 <div align="center">
 
-> Learn continuously. Build practically. Defend intelligently.
+### Learn relentlessly. Build visibly. Grow daily.
 
 </div>
