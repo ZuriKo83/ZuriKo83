@@ -1,5 +1,5 @@
 ### Welcome to my GitHub 👋
-I'm Zuri Ko
+I'm Byungyeon Ko
 
 #### Cybersecurity Developer
 Focused on Linux security, vulnerability research, and security automation.
