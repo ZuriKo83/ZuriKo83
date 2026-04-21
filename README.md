@@ -17,10 +17,6 @@
 
 ## About Me
 
-Security student building practical tools and analysis systems.
-
-Interested in malware analysis, threat intel, and blue team operations.
-
 </div>
 
 <p align="center">
