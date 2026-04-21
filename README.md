@@ -116,8 +116,8 @@
 
 | Project | Description | Status |
 |:--|:--|:--:|
-| [Semi_project1](https://github.com/Cy4Crew/Semi_project1) | Built core structure and improved major components of a Threat Intelligence Platform | ⚡ Active |
-| [Semi_project2](https://github.com/Cy4Crew/Semi_project2) | Built core structure and improved major components of a Malware Analysis Sandbox | 🚧 In Progress |
+| [Semi_project1](https://github.com/Cy4Crew/Semi_project1) | Threat Intelligence Platform for monitoring and alerting | ⚡ Active |
+| [Semi_project2](https://github.com/Cy4Crew/Semi_project2) | Malware Sandbox for dynamic behavior analysis | 🚧 In Progress |
 
 </div>
 
@@ -127,12 +127,13 @@
 
 ## 📜 Certifications in Progress
 
-Engineer Information Security (Planned)  
-Engineer Information Processing (Planned)  
-Linux Master Level 2 (Planned)  
-TOEIC 800+ Target  
-Korean History Proficiency Test Level 2  
-CCNA (Planned)
+<img src="https://img.shields.io/badge/Information%20Security%20Engineer-15803d?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Information%20Processing%20Engineer-2563eb?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Linux%20Master%20Lv2-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
+<br><br>
+<img src="https://img.shields.io/badge/TOEIC%20800%2B-E11D48?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Korean%20History%20Level%202-7C3AED?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/CCNA-1D4ED8?style=for-the-badge&logo=cisco&logoColor=white"/>
 
 </div>
 
