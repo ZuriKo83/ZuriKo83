@@ -150,17 +150,10 @@
 
 <div align="center">
 
-![](https://streak-stats.demolab.com?user=ZuriKo83\&theme=tokyonight\&hide_border=true\&background=0D1117\&ring=2563eb\&fire=22c55e\&currStreakLabel=f8fafc)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ZuriKo83\&show_icons=true\&theme=tokyonight\&hide_border=true\&bg_color=0D1117\&title_color=2563eb\&icon_color=22c55e\&text_color=f8fafc)
 
 </div>
 
----
-
-<div align="center">
-
-![](https://github-readme-activity-graph.vercel.app/graph?username=ZuriKo83\&theme=react-dark\&hide_border=true\&bg_color=0d1117\&color=22c55e\&line=2563eb\&point=f8fafc)
-
-</div>
 
 ---
 
