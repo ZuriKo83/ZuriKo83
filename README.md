@@ -125,15 +125,14 @@
 
 <div align="center">
 
-## 📜 Certifications in Progress
+## 📜 Currently Preparing
 
-<img src="https://img.shields.io/badge/Information%20Security%20Engineer-15803d?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Information%20Processing%20Engineer-2563eb?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Linux%20Master%20Lv2-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
-<br><br>
-<img src="https://img.shields.io/badge/TOEIC%20800%2B-E11D48?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Korean%20History%20Level%202-7C3AED?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/CCNA-1D4ED8?style=for-the-badge&logo=cisco&logoColor=white"/>
+Information Security Engineer  
+Information Processing Engineer  
+Linux Master Level 2  
+TOEIC 800+  
+Korean History Proficiency Test Level 2  
+CCNA
 
 </div>
 
