@@ -1,13 +1,13 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1f2937,100:0ea5e9&height=220&section=header&text=Byungyeon%20Ko&fontColor=ffffff&fontSize=42&animation=fadeIn&fontAlignY=38&desc=Threat%20Intel%20%7C%20Malware%20Analysis%20%7C%20Blue%20Team&descAlignY=58"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0b1220,55:172033,100:1d4ed8&height=220&section=header&text=Byungyeon%20Ko&fontColor=f8fafc&fontSize=42&animation=fadeIn&fontAlignY=38&desc=Threat%20Intel%20%7C%20Malware%20Analysis%20%7C%20Blue%20Team&descAlignY=58"/>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=18&pause=1300&color=00FF88&center=true&vCenter=true&width=860&lines=Security+Engineer+in+Progress;Think+Like+an+Attacker;Build+Like+a+Defender;Learning+Every+Day"/>
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=18&pause=1400&color=22C55E&center=true&vCenter=true&width=860&lines=Cybersecurity+Student;Think+Like+an+Attacker;Build+Like+a+Defender;Learning+Every+Day"/>
 
 <br>
 
-![](https://komarev.com/ghpvc/?username=ZuriKo83\&style=for-the-badge\&color=00ff88\&label=PROFILE+VIEWS)
-![](https://img.shields.io/github/followers/ZuriKo83?style=for-the-badge\&color=00bfff\&label=FOLLOWERS) <a href="mailto:drkoby0803@gmail.com"> <img src="https://img.shields.io/badge/Gmail-d14836?style=for-the-badge&logo=gmail&logoColor=white"/> </a>
+![](https://komarev.com/ghpvc/?username=ZuriKo83\&style=for-the-badge\&color=15803d\&label=PROFILE+VIEWS)
+![](https://img.shields.io/github/followers/ZuriKo83?style=for-the-badge\&color=2563eb\&label=FOLLOWERS) <a href="mailto:drkoby0803@gmail.com"> <img src="https://img.shields.io/badge/Gmail-d14836?style=for-the-badge&logo=gmail&logoColor=white"/> </a>
 
 </div>
 
@@ -39,14 +39,14 @@ Automating security.
 
 ## Security Focus
 
-<img src="https://img.shields.io/badge/Malware%20Analysis-00ff88?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Threat%20Intel-00bfff?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Blue%20Team-00ff88?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Web%20Security-00bfff?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Linux%20Security-00ff88?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/CTF-00bfff?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/OSINT-00ff88?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Reverse%20Engineering-00bfff?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Malware%20Analysis-15803d?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Threat%20Intel-2563eb?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Blue%20Team-15803d?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Web%20Security-2563eb?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Linux%20Security-15803d?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/CTF-2563eb?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/OSINT-15803d?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Reverse%20Engineering-2563eb?style=for-the-badge"/>
 
 </div>
 
@@ -69,12 +69,12 @@ Automating security.
 
 ## Currently Learning
 
-<img src="https://img.shields.io/badge/YARA-00ff88?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Windows%20Internals-00bfff?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Reverse%20Engineering-00ff88?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/SIEM-00bfff?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Linux%20Hardening-00ff88?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Threat%20Hunting-00bfff?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/YARA-15803d?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Windows%20Internals-2563eb?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Reverse%20Engineering-15803d?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/SIEM-2563eb?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Linux%20Hardening-15803d?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Threat%20Hunting-2563eb?style=for-the-badge"/>
 
 </div>
 
@@ -94,7 +94,7 @@ Automating security.
 
 ## Contribution Streak
 
-![](https://streak-stats.demolab.com?user=ZuriKo83\&theme=tokyonight\&hide_border=true\&background=0D1117)
+![](https://streak-stats.demolab.com?user=ZuriKo83\&theme=tokyonight\&hide_border=true\&background=0D1117\&ring=2563eb\&fire=22c55e\&currStreakLabel=f8fafc)
 
 </div>
 
@@ -104,7 +104,7 @@ Automating security.
 
 ## Contribution Graph
 
-![](https://github-readme-activity-graph.vercel.app/graph?username=ZuriKo83\&theme=react-dark\&hide_border=true\&bg_color=0d1117\&color=00ff88\&line=00bfff\&point=ffffff)
+![](https://github-readme-activity-graph.vercel.app/graph?username=ZuriKo83\&theme=react-dark\&hide_border=true\&bg_color=0d1117\&color=22c55e\&line=2563eb\&point=f8fafc)
 
 </div>
 
