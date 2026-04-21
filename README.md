@@ -29,45 +29,67 @@
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
 <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white"/>
 <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black"/>
+<img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>
 </td>
 </tr>
 
 <tr>
-<td><b>OS / Platform</b></td>
+<td><b>Operating Systems</b></td>
 <td>
 <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
+<img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"/>
 <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white"/>
-<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
+<img src="https://img.shields.io/badge/Kali-557C94?style=for-the-badge&logo=kalilinux&logoColor=white"/>
 </td>
 </tr>
 
 <tr>
-<td><b>Security</b></td>
+<td><b>Backend / Framework</b></td>
 <td>
+<img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
+<img src="https://img.shields.io/badge/Uvicorn-4051B5?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Scrapy-60A839?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Flask-111827?style=for-the-badge&logo=flask&logoColor=white"/>
+</td>
+</tr>
+
+<tr>
+<td><b>Containers / Infra</b></td>
+<td>
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
+<img src="https://img.shields.io/badge/Docker%20Compose-1D63ED?style=for-the-badge&logo=docker&logoColor=white"/>
+<img src="https://img.shields.io/badge/VMware-607078?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/VirtualBox-183A61?style=for-the-badge&logo=virtualbox&logoColor=white"/>
+</td>
+</tr>
+
+<tr>
+<td><b>Security Analysis</b></td>
+<td>
+<img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white"/>
+<img src="https://img.shields.io/badge/Burp%20Suite-ff6600?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Nmap-00457C?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/YARA-15803d?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/SIEM-2563eb?style=for-the-badge"/>
+</td>
+</tr>
+
+<tr>
+<td><b>Threat / DFIR</b></td>
+<td>
 <img src="https://img.shields.io/badge/OSINT-15803d?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Threat%20Intel-2563eb?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/SIEM-15803d?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Threat%20Hunting-2563eb?style=for-the-badge"/>
 </td>
 </tr>
 
 <tr>
-<td><b>Analysis</b></td>
-<td>
-<img src="https://img.shields.io/badge/Malware%20Analysis-15803d?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Reverse%20Engineering-2563eb?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Threat%20Hunting-15803d?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Linux%20Hardening-2563eb?style=for-the-badge"/>
-</td>
-</tr>
-
-<tr>
-<td><b>Tools</b></td>
+<td><b>Development Tools</b></td>
 <td>
 <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
-<img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white"/>
-<img src="https://img.shields.io/badge/Nmap-00457C?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Burp%20Suite-ff6600?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"/>
+<img src="https://img.shields.io/badge/Linux%20CLI-111827?style=for-the-badge"/>
 </td>
 </tr>
 
