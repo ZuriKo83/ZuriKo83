@@ -4,12 +4,12 @@
 
 # Welcome to my GitHub 👋
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=21&pause=1300&color=00FF88&center=true&vCenter=true&width=650&lines=Cybersecurity+Student;Building+Real+Security+Projects;Learning+Every+Day;Think+Like+an+Attacker"/>
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=18&pause=1300&color=00FF88&center=true&vCenter=true&width=820&lines=Cybersecurity+Student;Building+Security+Projects;Malware+Analysis+and+Threat+Intel;Learning+Every+Day;Think+Like+an+Attacker"/>
 
 <br>
 
 ![](https://komarev.com/ghpvc/?username=ZuriKo83\&style=for-the-badge\&color=00ff88\&label=PROFILE+VIEWS)
-![](https://img.shields.io/github/followers/ZuriKo83?style=for-the-badge\&color=00bfff\&label=FOLLOWERS)
+![](https://img.shields.io/github/followers/ZuriKo83?style=for-the-badge\&color=00bfff\&label=FOLLOWERS) <a href="mailto:drkoby0803@gmail.com"> <img src="https://img.shields.io/badge/Gmail-d14836?style=for-the-badge&logo=gmail&logoColor=white"/> </a>
 
 </div>
 
@@ -19,18 +19,16 @@
 
 ## About Me
 
-```text id="r5n7kd"
-Think like an attacker.
-Build like an engineer.
+Think like an attacker.<br>
+Build like an engineer.<br>
 Grow through execution.
-```
 
 </div>
 
 <p align="center">
 Cybersecurity student focused on practical skills.<br>
-Interested in Malware Analysis, Threat Intel, Blue Team.<br>
-Building tools, labs, and automation systems.
+Interested in Malware Analysis, Threat Intel, and Blue Team operations.<br>
+Building tools, labs, and automation systems through hands-on projects.
 </p>
 
 ---
@@ -62,12 +60,10 @@ Building tools, labs, and automation systems.
 
 ## Active Projects
 
-| Project                     |     Status     |
-| :-------------------------- | :------------: |
-| Malware Sandbox Lab         | 🚧 In Progress |
-| Threat Intel Dashboard      |    ⚡ Active    |
-| Security Automation Toolkit |   🔨 Building  |
-| OSINT Monitoring System     | 🔍 Researching |
+| Project                                                   | Description                                               |     Status     |
+| :-------------------------------------------------------- | :-------------------------------------------------------- | :------------: |
+| [Semi_project1](https://github.com/Cy4Crew/Semi_project1) | Darkweb monitoring and cyber threat intelligence platform |    ⚡ Active    |
+| [Semi_project2](https://github.com/Cy4Crew/Semi_project2) | VMware-assisted malware analysis sandbox                  | 🚧 In Progress |
 
 </div>
 
@@ -99,9 +95,9 @@ Building tools, labs, and automation systems.
 
 <div align="center">
 
-## Languages & Stats
+## Contribution Streak
 
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=ZuriKo83\&layout=compact\&theme=tokyonight\&hide_border=true\&bg_color=0d1117)
+![](https://streak-stats.demolab.com?user=ZuriKo83\&theme=tokyonight\&hide_border=true\&background=0D1117)
 
 </div>
 
@@ -123,20 +119,8 @@ Building tools, labs, and automation systems.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ZuriKo83/ZuriKo83/output/github-contribution-grid-snake-dark.svg">
-  <img alt="snake animation" src="https://raw.githubusercontent.com/ZuriKo83/ZuriKo83/output/github-contribution-grid-snake.svg">
+  <img alt="snake animation" src="https://raw.githubusercontent.com/ZuriKo83/ZuriKo83/output/github-contribution-grid-snake.svg" width="100%">
 </picture>
-
-</div>
-
----
-
-<div align="center">
-
-## Contact
-
-<a href="mailto:drkoby0803@gmail.com">
-<img src="https://img.shields.io/badge/Gmail-d14836?style=for-the-badge&logo=gmail&logoColor=white"/>
-</a>
 
 </div>
 
