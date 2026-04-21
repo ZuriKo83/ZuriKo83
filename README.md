@@ -27,9 +27,63 @@ Automating security.
 
 <div align="center">
 
-## Tech Stack
+## 💻 Security Stack
 
-<img src="https://skillicons.dev/icons?i=python,bash,c,linux,docker,git,vscode&theme=dark"/>
+<table>
+<tr>
+<th align="left">Category</th>
+<th align="left">Technologies</th>
+</tr>
+
+<tr>
+<td><b>Languages</b></td>
+<td>
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white"/>
+<img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black"/>
+</td>
+</tr>
+
+<tr>
+<td><b>OS / Platform</b></td>
+<td>
+<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
+<img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white"/>
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
+</td>
+</tr>
+
+<tr>
+<td><b>Security</b></td>
+<td>
+<img src="https://img.shields.io/badge/YARA-15803d?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/SIEM-2563eb?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/OSINT-15803d?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Threat%20Intel-2563eb?style=for-the-badge"/>
+</td>
+</tr>
+
+<tr>
+<td><b>Analysis</b></td>
+<td>
+<img src="https://img.shields.io/badge/Malware%20Analysis-15803d?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Reverse%20Engineering-2563eb?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Threat%20Hunting-15803d?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Linux%20Hardening-2563eb?style=for-the-badge"/>
+</td>
+</tr>
+
+<tr>
+<td><b>Tools</b></td>
+<td>
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
+<img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white"/>
+<img src="https://img.shields.io/badge/Nmap-00457C?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Burp%20Suite-ff6600?style=for-the-badge"/>
+</td>
+</tr>
+
+</table>
 
 </div>
 
@@ -44,9 +98,6 @@ Automating security.
 <img src="https://img.shields.io/badge/Blue%20Team-15803d?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Web%20Security-2563eb?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Linux%20Security-15803d?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/CTF-2563eb?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/OSINT-15803d?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Reverse%20Engineering-2563eb?style=for-the-badge"/>
 
 </div>
 
@@ -71,10 +122,9 @@ Automating security.
 
 <img src="https://img.shields.io/badge/YARA-15803d?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Windows%20Internals-2563eb?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Reverse%20Engineering-15803d?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/SIEM-2563eb?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Linux%20Hardening-15803d?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/SIEM-15803d?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Threat%20Hunting-2563eb?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Linux%20Hardening-15803d?style=for-the-badge"/>
 
 </div>
 
@@ -115,8 +165,8 @@ Automating security.
 ## Snake Animation
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ZuriKo83/ZuriKo83/output/github-contribution-grid-snake-dark.svg">
-  <img alt="snake animation" src="https://raw.githubusercontent.com/ZuriKo83/ZuriKo83/output/github-contribution-grid-snake.svg" width="100%">
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ZuriKo83/ZuriKo83/output/github-contribution-grid-snake-dark.svg">
+<img alt="snake animation" src="https://raw.githubusercontent.com/ZuriKo83/ZuriKo83/output/github-contribution-grid-snake.svg" width="100%">
 </picture>
 
 </div>
