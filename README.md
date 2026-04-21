@@ -172,11 +172,3 @@
 </picture>
 
 </div>
-
----
-
-<div align="center">
-
-### Know the attacker. Build the defense.
-
-</div>
