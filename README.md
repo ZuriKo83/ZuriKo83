@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0b1220,55:172033,100:1d4ed8&height=220&section=header&text=Byungyeon%20Ko&fontColor=f8fafc&fontSize=42&animation=fadeIn&fontAlignY=38&desc=Threat%20Intel%20%7C%20Malware%20Analysis%20%7C%20Blue%20Team&descAlignY=58"/>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=18&pause=1400&color=22C55E&center=true&vCenter=true&width=860&lines=Cybersecurity+Student;Building+Detection+%26+Analysis+Systems;Threat+Intel+%7C+Malware+Research;Learning+Every+Day"/>
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=18&pause=1400&color=22C55E&center=true&vCenter=true&width=860&lines=Security+Engineer;Building+Detection+%26+Analysis+Systems;Threat+Intel+%7C+Malware+Research;Learning+Every+Day"/>
 
 <br>
 
