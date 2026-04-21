@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:05070d,45:00ff88,100:00bfff&height=220&section=header&text=Byungyeon%20Ko&fontColor=ffffff&fontSize=44&animation=fadeIn&fontAlignY=36&desc=Threat%20Intel%20%7C%20Malware%20Analysis%20%7C%20Blue%20Team&descAlignY=58"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,45:00ff00,100:001a00&height=220&section=header&text=Byungyeon%20Ko&fontColor=00ffcc&fontSize=44&animation=fadeIn&fontAlignY=36&desc=Threat%20Intel%20%7C%20Malware%20Analysis%20%7C%20Blue%20Team&descAlignY=58"/>
 
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=18&pause=1300&color=00FF88&center=true&vCenter=true&width=860&lines=Security+Engineer+in+Progress;Think+Like+an+Attacker;Build+Like+a+Defender;Learning+Every+Day"/>
 
@@ -8,14 +8,6 @@
 
 ![](https://komarev.com/ghpvc/?username=ZuriKo83\&style=for-the-badge\&color=00ff88\&label=PROFILE+VIEWS)
 ![](https://img.shields.io/github/followers/ZuriKo83?style=for-the-badge\&color=00bfff\&label=FOLLOWERS) <a href="mailto:drkoby0803@gmail.com"> <img src="https://img.shields.io/badge/Gmail-d14836?style=for-the-badge&logo=gmail&logoColor=white"/> </a>
-
-</div>
-
----
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:000000,100:00ff00&height=120&section=header&text=THREAT%20INTEL%20%7C%20MALWARE%20ANALYSIS%20%7C%20BLUE%20TEAM&fontColor=00ff00&fontSize=28&fontAlignY=55"/>
 
 </div>
 
