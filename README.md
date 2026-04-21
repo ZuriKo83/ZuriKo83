@@ -116,8 +116,8 @@
 
 | Project | Description | Status |
 |:--|:--|:--:|
-| [Semi_project1](https://github.com/Cy4Crew/Semi_project1) | Threat Intelligence Platform for monitoring and alerting | ⚡ Active |
-| [Semi_project2](https://github.com/Cy4Crew/Semi_project2) | Malware Sandbox for dynamic behavior analysis | 🚧 In Progress |
+| [Semi_project1](https://github.com/Cy4Crew/Semi_project1) | Threat Intelligence Platform for Monitoring and Alerting | ⚡ Active |
+| [Semi_project2](https://github.com/Cy4Crew/Semi_project2) | Malware Sandbox for Dynamic Behavior Analysis | 🚧 In Progress |
 
 </div>
 
