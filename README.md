@@ -15,6 +15,14 @@
 
 <div align="center">
 
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:000000,100:00ff00&height=120&section=header&text=THREAT%20INTEL%20%7C%20MALWARE%20ANALYSIS%20%7C%20BLUE%20TEAM&fontColor=00ff00&fontSize=28&fontAlignY=55"/>
+
+</div>
+
+---
+
+<div align="center">
+
 ## About Me
 
 Analyzing threats.<br>
