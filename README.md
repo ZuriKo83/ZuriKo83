@@ -1,7 +1,8 @@
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:05070d,40:00ff88,100:00bfff&height=220&section=header&text=Byungyeon%20Ko&fontColor=ffffff&fontSize=44&animation=fadeIn&fontAlignY=36&desc=Malware%20Analysis%20%7C%20Threat%20Intel%20%7C%20Security%20Automation&descAlignY=58"/>
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=18&pause=1300&color=00FF88&center=true&vCenter=true&width=820&lines=Security+Engineer+in+Progress;Building+Security+Projects;Malware+Analysis+and+Threat+Intel;Learning+Every+Day;Think+Like+an+Attacker"/>
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=18&pause=1300&color=00FF88&center=true&vCenter=true&width=820&lines=Cybersecurity+Student;Building+Security+Projects;Malware+Analysis+and+Threat+Intel;Learning+Every+Day;Think+Like+an+Attacker"/>
 
 <br>
 
@@ -16,13 +17,11 @@
 
 ## About Me
 
-</div>
-
-<p align="center">
 Cybersecurity student focused on practical skills.<br>
-Interested in Malware Analysis, Threat Intel, and Blue Team operations.<br>
+Interested in Malware Analysis, Threat Intel, Blue Team, and Web Security.<br>
 Building tools, labs, and automation systems through hands-on projects.
-</p>
+
+</div>
 
 ---
 
@@ -43,7 +42,8 @@ Building tools, labs, and automation systems through hands-on projects.
 <img src="https://img.shields.io/badge/Malware%20Analysis-00ff88?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Threat%20Intel-00bfff?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Blue%20Team-00ff88?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Linux%20Security-00bfff?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Web%20Security-00bfff?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Linux%20Security-00ff88?style=for-the-badge"/>
 
 </div>
 
@@ -53,10 +53,10 @@ Building tools, labs, and automation systems through hands-on projects.
 
 ## Active Projects
 
-| Project                                                   | Description                                               |     Status     |
-| :-------------------------------------------------------- | :-------------------------------------------------------- | :------------: |
-| [Semi_project1](https://github.com/Cy4Crew/Semi_project1) | Darkweb monitoring and cyber threat intelligence platform |    ⚡ Active    |
-| [Semi_project2](https://github.com/Cy4Crew/Semi_project2) | VMware-assisted malware analysis sandbox                  | 🚧 In Progress |
+| Project                                                   | Description                  |     Status     |
+| :-------------------------------------------------------- | :--------------------------- | :------------: |
+| [Semi_project1](https://github.com/Cy4Crew/Semi_project1) | Threat Intelligence Platform |    ⚡ Active    |
+| [Semi_project2](https://github.com/Cy4Crew/Semi_project2) | Malware Analysis Sandbox     | 🚧 In Progress |
 
 </div>
 
