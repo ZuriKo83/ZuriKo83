@@ -101,40 +101,12 @@
 
 <div align="center">
 
-## Security Focus
-
-<img src="https://img.shields.io/badge/Malware%20Analysis-15803d?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Threat%20Intel-2563eb?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Blue%20Team-15803d?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Web%20Security-2563eb?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Linux%20Security-15803d?style=for-the-badge"/>
-
-</div>
-
----
-
-<div align="center">
-
 ## Active Projects
 
 | Project                                                   | Description                  |     Status     |
 | :-------------------------------------------------------- | :--------------------------- | :------------: |
 | [Semi_project1](https://github.com/Cy4Crew/Semi_project1) | Threat Intelligence Platform |    ⚡ Active    |
 | [Semi_project2](https://github.com/Cy4Crew/Semi_project2) | Malware Analysis Sandbox     | 🚧 In Progress |
-
-</div>
-
----
-
-<div align="center">
-
-## Currently Learning
-
-<img src="https://img.shields.io/badge/YARA-15803d?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Windows%20Internals-2563eb?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/SIEM-15803d?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Threat%20Hunting-2563eb?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Linux%20Hardening-15803d?style=for-the-badge"/>
 
 </div>
 
