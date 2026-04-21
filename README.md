@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,45:00ff00,100:001a00&height=220&section=header&text=Byungyeon%20Ko&fontColor=00ffcc&fontSize=44&animation=fadeIn&fontAlignY=36&desc=Threat%20Intel%20%7C%20Malware%20Analysis%20%7C%20Blue%20Team&descAlignY=58"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1f2937,100:0ea5e9&height=220&section=header&text=Byungyeon%20Ko&fontColor=ffffff&fontSize=42&animation=fadeIn&fontAlignY=38&desc=Threat%20Intel%20%7C%20Malware%20Analysis%20%7C%20Blue%20Team&descAlignY=58"/>
 
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=18&pause=1300&color=00FF88&center=true&vCenter=true&width=860&lines=Security+Engineer+in+Progress;Think+Like+an+Attacker;Build+Like+a+Defender;Learning+Every+Day"/>
 
