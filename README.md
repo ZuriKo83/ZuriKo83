@@ -18,47 +18,97 @@
 
 <div align="center">
 
-## Security Stack
+## 💻 Security Stack
 
 <table>
 <tr><th align="left">Category</th><th align="left">Technologies</th></tr>
 
 <tr>
 <td><b>Languages</b></td>
-<td>Python · Bash · C · SQL</td>
+<td>
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white"/>
+<img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black"/>
+<img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>
+</td>
 </tr>
 
 <tr>
 <td><b>Operating Systems</b></td>
-<td>Linux · Ubuntu · Windows · Kali</td>
+<td>
+<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
+<img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"/>
+<img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white"/>
+<img src="https://img.shields.io/badge/Kali-557C94?style=for-the-badge&logo=kalilinux&logoColor=white"/>
+</td>
 </tr>
 
 <tr>
 <td><b>Backend / Framework</b></td>
-<td>FastAPI · Flask · Uvicorn · Scrapy</td>
+<td>
+<img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
+<img src="https://img.shields.io/badge/Flask-111827?style=for-the-badge&logo=flask&logoColor=white"/>
+<img src="https://img.shields.io/badge/Uvicorn-4051B5?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Scrapy-60A839?style=for-the-badge"/>
+</td>
 </tr>
 
 <tr>
 <td><b>Containers / Infra</b></td>
-<td>Docker · Docker Compose · VMware · VirtualBox</td>
+<td>
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
+<img src="https://img.shields.io/badge/Docker%20Compose-1D63ED?style=for-the-badge&logo=docker&logoColor=white"/>
+<img src="https://img.shields.io/badge/VMware-607078?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/VirtualBox-183A61?style=for-the-badge&logo=virtualbox&logoColor=white"/>
+</td>
 </tr>
 
 <tr>
 <td><b>Security Tools</b></td>
-<td>Wireshark · Burp Suite · Nmap · YARA</td>
+<td>
+<img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white"/>
+<img src="https://img.shields.io/badge/Burp%20Suite-ff6600?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Nmap-00457C?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/YARA-15803d?style=for-the-badge"/>
+</td>
 </tr>
 
 <tr>
 <td><b>Threat / DFIR</b></td>
-<td>OSINT · Threat Intel · SIEM · Threat Hunting</td>
+<td>
+<img src="https://img.shields.io/badge/OSINT-15803d?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Threat%20Intel-2563eb?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/SIEM-15803d?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Threat%20Hunting-2563eb?style=for-the-badge"/>
+</td>
 </tr>
 
 <tr>
 <td><b>Development</b></td>
-<td>Git · GitHub · VS Code · Linux CLI</td>
+<td>
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"/>
+<img src="https://img.shields.io/badge/Linux%20CLI-111827?style=for-the-badge"/>
+</td>
 </tr>
 
 </table>
+
+</div>
+
+---
+
+<div align="center">
+
+## 📜 Certifications in Progress
+
+정보보안기사 · Engineer Information Security (Planned)  
+정보처리기사 · Engineer Information Processing (Planned)  
+리눅스마스터 2급 · Linux Master Level 2 (Planned)  
+TOEIC 800+ Target  
+Korean History Proficiency Test Level 2  
+CCNA (Planned)
 
 </div>
 
@@ -72,16 +122,6 @@
 |:--|:--|:--:|
 | [Semi_project1](https://github.com/Cy4Crew/Semi_project1) | Built core structure and improved major components of a Threat Intelligence Platform | ⚡ Active |
 | [Semi_project2](https://github.com/Cy4Crew/Semi_project2) | Built core structure and improved major components of a Malware Analysis Sandbox | 🚧 In Progress |
-
-</div>
-
----
-
-<div align="center">
-
-## Certifications (In Progress)
-
-정보보안기사 · 정보처리기사 · 리눅스마스터 2급 · TOEIC 800+ · 한국사능력검정 2급 · CCNA
 
 </div>
 
