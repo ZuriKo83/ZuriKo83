@@ -15,18 +15,6 @@
 
 <div align="center">
 
-## About Me
-
-Analyzing threats.<br>
-Building defenses.<br>
-Automating security.
-
-</div>
-
----
-
-<div align="center">
-
 ## 💻 Security Stack
 
 <table>
