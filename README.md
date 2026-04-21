@@ -101,14 +101,12 @@
 
 <div align="center">
 
-## 📜 Certifications in Progress
+## Projects
 
-정보보안기사 · Engineer Information Security (Planned)  
-정보처리기사 · Engineer Information Processing (Planned)  
-리눅스마스터 2급 · Linux Master Level 2 (Planned)  
-TOEIC 800+ Target  
-Korean History Proficiency Test Level 2  
-CCNA (Planned)
+| Project | Description | Status |
+|:--|:--|:--:|
+| [Semi_project1](https://github.com/Cy4Crew/Semi_project1) | Built core structure and improved major components of a Threat Intelligence Platform | ⚡ Active |
+| [Semi_project2](https://github.com/Cy4Crew/Semi_project2) | Built core structure and improved major components of a Malware Analysis Sandbox | 🚧 In Progress |
 
 </div>
 
@@ -116,12 +114,14 @@ CCNA (Planned)
 
 <div align="center">
 
-## Projects
+## 📜 Certifications in Progress
 
-| Project | Description | Status |
-|:--|:--|:--:|
-| [Semi_project1](https://github.com/Cy4Crew/Semi_project1) | Built core structure and improved major components of a Threat Intelligence Platform | ⚡ Active |
-| [Semi_project2](https://github.com/Cy4Crew/Semi_project2) | Built core structure and improved major components of a Malware Analysis Sandbox | 🚧 In Progress |
+Engineer Information Security (Planned)  
+Engineer Information Processing (Planned)  
+Linux Master Level 2 (Planned)  
+TOEIC 800+ Target  
+Korean History Proficiency Test Level 2  
+CCNA (Planned)
 
 </div>
 
