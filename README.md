@@ -142,8 +142,6 @@
 
 <div align="center">
 
-## GitHub Overview
-
 ![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ZuriKo83\&theme=github_dark)
 
 </div>
@@ -151,8 +149,6 @@
 ---
 
 <div align="center">
-
-## Contribution Streak
 
 ![](https://streak-stats.demolab.com?user=ZuriKo83\&theme=tokyonight\&hide_border=true\&background=0D1117\&ring=2563eb\&fire=22c55e\&currStreakLabel=f8fafc)
 
@@ -162,8 +158,6 @@
 
 <div align="center">
 
-## Contribution Graph
-
 ![](https://github-readme-activity-graph.vercel.app/graph?username=ZuriKo83\&theme=react-dark\&hide_border=true\&bg_color=0d1117\&color=22c55e\&line=2563eb\&point=f8fafc)
 
 </div>
@@ -171,8 +165,6 @@
 ---
 
 <div align="center">
-
-## Snake Animation
 
 <picture>
 <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ZuriKo83/ZuriKo83/output/github-contribution-grid-snake-dark.svg">
