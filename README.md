@@ -17,9 +17,9 @@
 
 ## About Me
 
-Think like an attacker.<br>
-Build like an engineer.<br>
-Grow through execution.
+Security student building practical tools and analysis systems.
+
+Interested in malware analysis, threat intel, and blue team operations.
 
 </div>
 
