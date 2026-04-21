@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:05070d,40:00ff88,100:00bfff&height=220&section=header&text=Byungyeon%20Ko&fontColor=ffffff&fontSize=44&animation=fadeIn&fontAlignY=36&desc=Malware%20Analysis%20%7C%20Threat%20Intel%20%7C%20Blue%20Team&descAlignY=58"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:05070d,45:00ff88,100:00bfff&height=220&section=header&text=Byungyeon%20Ko&fontColor=ffffff&fontSize=44&animation=fadeIn&fontAlignY=36&desc=Threat%20Intel%20%7C%20Malware%20Analysis%20%7C%20Blue%20Team&descAlignY=58"/>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=18&pause=1300&color=00FF88&center=true&vCenter=true&width=820&lines=Security+Engineer+in+Progress;Learning+Every+Day;Think+Like+an+Attacker"/>
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=18&pause=1300&color=00FF88&center=true&vCenter=true&width=860&lines=Security+Engineer+in+Progress;Think+Like+an+Attacker;Build+Like+a+Defender;Learning+Every+Day"/>
 
 <br>
 
@@ -17,9 +17,9 @@
 
 ## About Me
 
-Cybersecurity student focused on practical skills.<br>
-Interested in Malware Analysis, Threat Intel, Blue Team, and Web Security.<br>
-Building tools, labs, and automation systems through hands-on projects.
+Analyzing threats.<br>
+Building defenses.<br>
+Automating security.
 
 </div>
 
@@ -44,6 +44,9 @@ Building tools, labs, and automation systems through hands-on projects.
 <img src="https://img.shields.io/badge/Blue%20Team-00ff88?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Web%20Security-00bfff?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Linux%20Security-00ff88?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/CTF-00bfff?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/OSINT-00ff88?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Reverse%20Engineering-00bfff?style=for-the-badge"/>
 
 </div>
 
@@ -71,6 +74,7 @@ Building tools, labs, and automation systems through hands-on projects.
 <img src="https://img.shields.io/badge/Reverse%20Engineering-00ff88?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/SIEM-00bfff?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Linux%20Hardening-00ff88?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Threat%20Hunting-00bfff?style=for-the-badge"/>
 
 </div>
 
@@ -121,6 +125,6 @@ Building tools, labs, and automation systems through hands-on projects.
 
 <div align="center">
 
-### Learn relentlessly. Build visibly.
+### Know the attacker. Build the defense.
 
 </div>
