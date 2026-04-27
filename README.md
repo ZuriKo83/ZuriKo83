@@ -118,7 +118,7 @@
 |:--|:--|:--:|
 | [Semi_project1](https://github.com/Cy4Crew/Semi_project1) | Threat Intelligence Platform for Monitoring and Alerting | ⚡ Active |
 | [Semi_project2](https://github.com/Cy4Crew/Semi_project2) | Malware Sandbox for Dynamic Behavior Analysis | ⚡ Active |
-| [Semi_project3](https://github.com/Cy4Crew/Semi_project3) | 미정 | 🚧 In Progress |
+| [Semi_project3](https://github.com/Cy4Crew/Semi_project3) | Security Scanning Platform | 🚧 In Progress |
 
 </div>
 
