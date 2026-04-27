@@ -78,19 +78,21 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       snake.pop();
     }
+
+    // 🔥 AI에서 접근 가능하게 노출
+    window.snake = snake;
+    window.foods = foods;
   }
 
   function draw(){
     ctx.fillStyle = "#0d1117";
     ctx.fillRect(0,0,400,400);
 
-    // 먹이
     ctx.fillStyle = "#ff3b3b";
     foods.forEach(f=>{
       ctx.fillRect(f.x*size, f.y*size, size-2, size-2);
     });
 
-    // 뱀
     ctx.fillStyle = "#22c55e";
     snake.forEach(s=>{
       ctx.fillRect(s.x*size, s.y*size, size-2, size-2);
@@ -107,13 +109,18 @@ document.addEventListener("DOMContentLoaded", () => {
     requestAnimationFrame(gameLoop);
   }
 
+  // 🔥 외부(AI)에서 방향 변경 가능
+  window.setDirection = (dir) => {
+    if(dir==="ArrowUp" && dy===0){dx=0;dy=-1;}
+    if(dir==="ArrowDown" && dy===0){dx=0;dy=1;}
+    if(dir==="ArrowLeft" && dx===0){dx=-1;dy=0;}
+    if(dir==="ArrowRight" && dx===0){dx=1;dy=0;}
+  };
+
   spawnFoods();
   requestAnimationFrame(gameLoop);
 
   document.addEventListener("keydown", e=>{
-    if(e.key==="ArrowUp" && dy===0){dx=0;dy=-1;}
-    if(e.key==="ArrowDown" && dy===0){dx=0;dy=1;}
-    if(e.key==="ArrowLeft" && dx===0){dx=-1;dy=0;}
-    if(e.key==="ArrowRight" && dx===0){dx=1;dy=0;}
+    window.setDirection(e.key);
   });
 });
