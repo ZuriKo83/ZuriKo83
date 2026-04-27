@@ -12,7 +12,7 @@ let foods = [];
 const FOOD_COUNT = 5;
 
 // 속도 (낮을수록 빠름, ms)
-let speed = 12;
+let speed = 1;
 
 function spawnFoods(){
   foods = [];
