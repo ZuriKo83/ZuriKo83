@@ -18,11 +18,16 @@ const URL = "https://ZuriKo83.github.io/ZuriKo83/repo/";
   });
 
   const page = await browser.newPage();
-  await page.setViewport({ width: WIDTH, height: HEIGHT });
+
+  // viewport 고정 (중요)
+  await page.setViewport({
+    width: WIDTH,
+    height: HEIGHT
+  });
 
   await page.goto(URL, { waitUntil: "domcontentloaded" });
 
-  // 🔥 게임 로딩 대기
+  // 게임 로딩 대기
   await new Promise(r => setTimeout(r, 2000));
 
   fs.mkdirSync("assets", { recursive: true });
@@ -40,6 +45,7 @@ const URL = "https://ZuriKo83.github.io/ZuriKo83/repo/";
   const canvas = createCanvas(WIDTH, HEIGHT);
   const ctx = canvas.getContext("2d");
 
+  // 자동 플레이
   const directions = ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"];
 
   const interval = setInterval(async () => {
@@ -49,14 +55,27 @@ const URL = "https://ZuriKo83.github.io/ZuriKo83/repo/";
     } catch {}
   }, 300);
 
-  // 🔥 프레임 캡처 (딜레이 추가)
+  // 캔버스 위치 가져오기 (핵심)
+  const canvasEl = await page.$("#game");
+  const box = await canvasEl.boundingBox();
+
+  // 프레임 캡처
   for (let i = 0; i < 40; i++) {
-    const buffer = await page.screenshot();
+    const buffer = await page.screenshot({
+      clip: {
+        x: box.x,
+        y: box.y,
+        width: box.width,
+        height: box.height
+      }
+    });
+
     const img = await loadImage(buffer);
     ctx.drawImage(img, 0, 0);
     encoder.addFrame(ctx);
 
-    await new Promise(r => setTimeout(r, 100)); // 핵심
+    // 프레임 간 딜레이
+    await new Promise(r => setTimeout(r, 100));
   }
 
   encoder.finish();
@@ -66,5 +85,5 @@ const URL = "https://ZuriKo83.github.io/ZuriKo83/repo/";
   clearInterval(interval);
   await browser.close();
 
-  console.log("✅ GIF 생성 완료");
+  console.log("✅ GIF 생성 완료: assets/preview.gif");
 })();
