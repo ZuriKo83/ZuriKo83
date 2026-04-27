@@ -141,16 +141,6 @@ CCNA
 
 <div align="center">
 
-[![Snake Game](assets/preview.gif)](https://zuriko83.github.io/ZuriKo83/repo/index.html)
-
-</div>
-
----
-
-<div align="center">
-
-## 🐍 Snake Game
-
-[![Snake](assets/preview.gif)](https://ZuriKo83.github.io/ZuriKo83/repo/index.html)
+[![Snake Game](assets/preview.gif)](https://ZuriKo83.github.io/ZuriKo83/)
 
 </div>
