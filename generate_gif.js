@@ -18,16 +18,11 @@ const URL = "https://ZuriKo83.github.io/ZuriKo83/repo/";
   });
 
   const page = await browser.newPage();
-
-  // viewport 고정 (중요)
-  await page.setViewport({
-    width: WIDTH,
-    height: HEIGHT
-  });
+  await page.setViewport({ width: WIDTH, height: HEIGHT });
 
   await page.goto(URL, { waitUntil: "domcontentloaded" });
 
-  // 게임 로딩 대기
+  // 로딩 대기
   await new Promise(r => setTimeout(r, 2000));
 
   fs.mkdirSync("assets", { recursive: true });
@@ -45,22 +40,48 @@ const URL = "https://ZuriKo83.github.io/ZuriKo83/repo/";
   const canvas = createCanvas(WIDTH, HEIGHT);
   const ctx = canvas.getContext("2d");
 
-  // 자동 플레이
-  const directions = ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"];
-
+  // 🔥 AI 자동 플레이
   const interval = setInterval(async () => {
     try {
-      const key = directions[Math.floor(Math.random() * 4)];
-      await page.keyboard.press(key);
-    } catch {}
-  }, 300);
+      const move = await page.evaluate(() => {
+        const snake = window.snake;
+        const foods = window.foods;
 
-  // 캔버스 위치 가져오기 (핵심)
+        if (!snake || !foods || foods.length === 0) return null;
+
+        const head = snake[0];
+
+        let target = foods[0];
+        let minDist = Infinity;
+
+        for (const f of foods) {
+          const d = Math.abs(head.x - f.x) + Math.abs(head.y - f.y);
+          if (d < minDist) {
+            minDist = d;
+            target = f;
+          }
+        }
+
+        if (target.x > head.x) return "ArrowRight";
+        if (target.x < head.x) return "ArrowLeft";
+        if (target.y > head.y) return "ArrowDown";
+        if (target.y < head.y) return "ArrowUp";
+
+        return null;
+      });
+
+      if (move) {
+        await page.keyboard.press(move);
+      }
+    } catch {}
+  }, 120);
+
+  // 캔버스 위치
   const canvasEl = await page.$("#game");
   const box = await canvasEl.boundingBox();
 
   // 프레임 캡처
-  for (let i = 0; i < 40; i++) {
+  for (let i = 0; i < 50; i++) {
     const buffer = await page.screenshot({
       clip: {
         x: box.x,
@@ -74,7 +95,6 @@ const URL = "https://ZuriKo83.github.io/ZuriKo83/repo/";
     ctx.drawImage(img, 0, 0);
     encoder.addFrame(ctx);
 
-    // 프레임 간 딜레이
     await new Promise(r => setTimeout(r, 100));
   }
 
@@ -85,5 +105,5 @@ const URL = "https://ZuriKo83.github.io/ZuriKo83/repo/";
   clearInterval(interval);
   await browser.close();
 
-  console.log("✅ GIF 생성 완료: assets/preview.gif");
+  console.log("✅ AI GIF 생성 완료");
 })();
