@@ -16,15 +16,30 @@ def level(v):
     return 4
 
 def get_grid():
-    html = requests.get(f"https://github.com/users/{USER}/contributions").text
+    headers = {
+        "User-Agent": "Mozilla/5.0"
+    }
+
+    res = requests.get(
+        f"https://github.com/users/{USER}/contributions",
+        headers=headers
+    )
+
+    html = res.text
+    parts = html.split('data-count="')[1:]
+
     g = [[0]*W for _ in range(H)]
-    i = 0
-    for line in html.split("data-count=")[1:]:
-        v = int(line.split('"')[1])
+
+    for i, part in enumerate(parts):
+        try:
+            v = int(part.split('"')[0])
+        except:
+            v = 0
+
         x, y = i % W, i // W
         if y < H:
             g[y][x] = v
-        i += 1
+
     return g
 
 def path():
