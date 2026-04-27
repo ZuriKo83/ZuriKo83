@@ -115,7 +115,7 @@ function gameLoop(time){
 
   if(acc > speed){
     update();
-    acc = 0;
+    acc -= speed;
   }
 
   draw();
