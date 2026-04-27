@@ -1,51 +1,19 @@
-import requests
-import os
+import os, random
 from xml.etree.ElementTree import Element, SubElement, tostring
 
-USER = "ZuriKo83"
 W, H = 53, 7
 CELL = 16
+DENSITY = 0.35   # 잔디 밀도
+STEPS = 220      # 프레임 수
 
 PALETTE = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"]
 
-def get_grid():
-    query = """
-    {
-      user(login: "%s") {
-        contributionsCollection {
-          contributionCalendar {
-            weeks {
-              contributionDays {
-                contributionCount
-              }
-            }
-          }
-        }
-      }
-    }
-    """ % USER
-
-    headers = {
-        "Authorization": "Bearer %s" % os.environ.get("GITHUB_TOKEN"),
-        "Content-Type": "application/json"
-    }
-
-    res = requests.post(
-        "https://api.github.com/graphql",
-        json={"query": query},
-        headers=headers
-    )
-
-    data = res.json()
-    weeks = data["data"]["user"]["contributionsCollection"]["contributionCalendar"]["weeks"]
-
+def gen_grid():
     g = [[0]*W for _ in range(H)]
-
-    for x, week in enumerate(weeks[:W]):
-        for y, day in enumerate(week["contributionDays"]):
-            if y < H:
-                g[y][x] = day["contributionCount"]
-
+    for y in range(H):
+        for x in range(W):
+            if random.random() < DENSITY:
+                g[y][x] = random.randint(1, 12)
     return g
 
 def level(v):
@@ -60,21 +28,18 @@ def path():
     for x in range(W):
         col = range(H) if x % 2 == 0 else range(H-1, -1, -1)
         for y in col:
-            p.append((x, y))
+            p.append((x,y))
     return p
 
-def simulate_frames(grid):
+def simulate_frames():
+    grid = gen_grid()
     p = path()
+    snake, eaten = [], set()
     frames = []
 
-    snake = []
-    eaten = set()
-
-    LIMIT = 150
-
-    for i in range(LIMIT):
-        pos = p[i]
-        x, y = pos
+    for i in range(STEPS):
+        pos = p[i % len(p)]
+        x,y = pos
         snake.append(pos)
 
         if grid[y][x] > 0 and pos not in eaten:
@@ -83,11 +48,17 @@ def simulate_frames(grid):
             if len(snake) > 1:
                 snake.pop(0)
 
-        frames.append((list(snake), set(eaten)))
+        frames.append((list(snake), set(eaten), grid))
+
+        # 다 먹으면 초기화
+        if len(eaten) > W*H*0.6:
+            grid = gen_grid()
+            eaten.clear()
+            snake = [pos]
 
     return frames
 
-def make_svg(grid, frames):
+def make_svg(frames):
     svg = Element("svg",
                   width="100%",
                   height="220",
@@ -100,22 +71,22 @@ def make_svg(grid, frames):
                height=str(H*CELL),
                fill="#0d1117")
 
-    duration = len(frames) * 0.08
+    dur = len(frames) * 0.07
 
-    for i, (snake, eaten) in enumerate(frames):
+    for i,(snake,eaten,grid) in enumerate(frames):
         g = SubElement(svg, "g", opacity="0")
 
         SubElement(g, "animate",
                    attributeName="opacity",
                    values="0;1;0",
-                   dur=f"{duration}s",
-                   begin=f"{i*0.08}s",
+                   dur=f"{dur}s",
+                   begin=f"{i*0.07}s",
                    repeatCount="indefinite")
 
         # 잔디
         for y in range(H):
             for x in range(W):
-                if (x, y) in eaten:
+                if (x,y) in eaten:
                     continue
                 color = PALETTE[level(grid[y][x])]
                 SubElement(g, "rect",
@@ -126,7 +97,7 @@ def make_svg(grid, frames):
                            fill=color)
 
         # 뱀
-        for (x, y) in snake:
+        for (x,y) in snake:
             SubElement(g, "rect",
                        x=str(x*CELL),
                        y=str(y*CELL),
@@ -137,10 +108,8 @@ def make_svg(grid, frames):
     return tostring(svg).decode()
 
 if __name__ == "__main__":
-    grid = get_grid()
-    frames = simulate_frames(grid)
-    svg = make_svg(grid, frames)
+    frames = simulate_frames()
+    svg = make_svg(frames)
 
     os.makedirs("dist", exist_ok=True)
-    with open("dist/snake.svg", "w") as f:
-        f.write(svg)
+    open("dist/snake.svg","w").write(svg)
