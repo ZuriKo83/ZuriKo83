@@ -22,10 +22,10 @@ document.addEventListener("DOMContentLoaded", () => {
         y: Math.floor(Math.random()*tile)
       };
 
-      const overlapSnake = snake.some(s => s.x === f.x && s.y === f.y);
-      const overlapFood = foods.some(ff => ff.x === f.x && ff.y === f.y);
-
-      if(!overlapSnake && !overlapFood){
+      if(
+        !snake.some(s => s.x===f.x && s.y===f.y) &&
+        !foods.some(ff => ff.x===f.x && ff.y===f.y)
+      ){
         foods.push(f);
       }
     }
@@ -41,13 +41,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const head = { x: snake[0].x + dx, y: snake[0].y + dy };
 
     if(head.x < 0 || head.y < 0 || head.x >= tile || head.y >= tile){
-      reset();
-      return;
+      reset(); return;
     }
 
-    if(snake.some(s => s.x === head.x && s.y === head.y)){
-      reset();
-      return;
+    if(snake.some(s => s.x===head.x && s.y===head.y)){
+      reset(); return;
     }
 
     snake.unshift(head);
@@ -55,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let ate = false;
 
     foods = foods.filter(f=>{
-      if(head.x === f.x && head.y === f.y){
+      if(head.x===f.x && head.y===f.y){
         ate = true;
         return false;
       }
@@ -63,25 +61,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     if(ate){
-      let newFood;
+      let nf;
       do{
-        newFood = {
+        nf = {
           x: Math.floor(Math.random()*tile),
           y: Math.floor(Math.random()*tile)
         };
       }while(
-        snake.some(s => s.x === newFood.x && s.y === newFood.y) ||
-        foods.some(f => f.x === newFood.x && f.y === newFood.y)
+        snake.some(s=>s.x===nf.x && s.y===nf.y) ||
+        foods.some(f=>f.x===nf.x && f.y===nf.y)
       );
-
-      foods.push(newFood);
+      foods.push(nf);
     } else {
       snake.pop();
     }
 
-    // 🔥 AI에서 접근 가능하게 노출
+    // 🔥 AI용 상태 노출
     window.snake = snake;
     window.foods = foods;
+    window.dx = dx;
+    window.dy = dy;
   }
 
   function draw(){
@@ -104,13 +103,12 @@ document.addEventListener("DOMContentLoaded", () => {
       update();
       lastMove = time;
     }
-
     draw();
     requestAnimationFrame(gameLoop);
   }
 
-  // 🔥 외부(AI)에서 방향 변경 가능
-  window.setDirection = (dir) => {
+  // 🔥 외부 방향 제어
+  window.setDirection = (dir)=>{
     if(dir==="ArrowUp" && dy===0){dx=0;dy=-1;}
     if(dir==="ArrowDown" && dy===0){dx=0;dy=1;}
     if(dir==="ArrowLeft" && dx===0){dx=-1;dy=0;}
