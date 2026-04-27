@@ -1,12 +1,53 @@
 import requests
-from xml.etree.ElementTree import Element, SubElement, tostring
 import os
+from xml.etree.ElementTree import Element, SubElement, tostring
 
 USER = "ZuriKo83"
 W, H = 53, 7
 CELL = 12
 
-PALETTE = ["#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39"]
+PALETTE = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"]
+
+def get_grid():
+    query = """
+    {
+      user(login: "%s") {
+        contributionsCollection {
+          contributionCalendar {
+            weeks {
+              contributionDays {
+                contributionCount
+              }
+            }
+          }
+        }
+      }
+    }
+    """ % USER
+
+    headers = {
+        "Authorization": "Bearer %s" % os.environ.get("GITHUB_TOKEN"),
+        "Content-Type": "application/json"
+    }
+
+    res = requests.post(
+        "https://api.github.com/graphql",
+        json={"query": query},
+        headers=headers
+    )
+
+    data = res.json()
+
+    weeks = data["data"]["user"]["contributionsCollection"]["contributionCalendar"]["weeks"]
+
+    g = [[0]*W for _ in range(H)]
+
+    for x, week in enumerate(weeks[:W]):
+        for y, day in enumerate(week["contributionDays"]):
+            if y < H:
+                g[y][x] = day["contributionCount"]
+
+    return g
 
 def level(v):
     if v == 0: return 0
@@ -14,31 +55,6 @@ def level(v):
     if v < 6: return 2
     if v < 10: return 3
     return 4
-
-def get_grid():
-    headers = {"User-Agent": "Mozilla/5.0"}
-
-    res = requests.get(
-        f"https://github.com/users/{USER}/contributions",
-        headers=headers
-    )
-
-    html = res.text
-    parts = html.split('data-count="')[1:]
-
-    g = [[0]*W for _ in range(H)]
-
-    for i, part in enumerate(parts):
-        try:
-            v = int(part.split('"')[0])
-        except:
-            v = 0
-
-        x, y = i % W, i // W
-        if y < H:
-            g[y][x] = v
-
-    return g
 
 def path():
     p = []
@@ -50,7 +66,6 @@ def path():
 
 def simulate(grid):
     p = path()
-    frames = []
     snake = []
     eaten = set()
 
@@ -64,59 +79,51 @@ def simulate(grid):
             if len(snake) > 1:
                 snake.pop(0)
 
-        frames.append((list(snake), set(eaten)))
+    return snake, eaten
 
-    return frames
-
-def make_svg(grid, frames):
+def make_svg(grid, snake, eaten):
     svg = Element("svg",
                   width=str(W*CELL),
                   height=str(H*CELL),
                   xmlns="http://www.w3.org/2000/svg")
 
-    for i, (snake, eaten) in enumerate(frames):
-        g = SubElement(
-            svg,
-            "g",
-            id=f"f{i}",
-            visibility="visible" if i == 0 else "hidden"
-        )
+    # 배경
+    SubElement(svg, "rect",
+               x="0", y="0",
+               width=str(W*CELL),
+               height=str(H*CELL),
+               fill="#0d1117")
 
-        # 잔디
-        for y in range(H):
-            for x in range(W):
-                if (x, y) in eaten:
-                    continue
-                color = PALETTE[level(grid[y][x])]
-                SubElement(
-                    g,
-                    "rect",
-                    x=str(x*CELL),
-                    y=str(y*CELL),
-                    width=str(CELL-2),
-                    height=str(CELL-2),
-                    fill=color
-                )
+    # 잔디
+    for y in range(H):
+        for x in range(W):
+            if (x, y) in eaten:
+                continue
+            color = PALETTE[level(grid[y][x])]
+            SubElement(svg, "rect",
+                       x=str(x*CELL),
+                       y=str(y*CELL),
+                       width=str(CELL-2),
+                       height=str(CELL-2),
+                       fill=color)
 
-        # 뱀
-        for (x, y) in snake:
-            SubElement(
-                g,
-                "rect",
-                x=str(x*CELL),
-                y=str(y*CELL),
-                width=str(CELL-2),
-                height=str(CELL-2),
-                fill="#ff3b3b"
-            )
+    # 뱀
+    for (x, y) in snake:
+        SubElement(svg, "rect",
+                   x=str(x*CELL),
+                   y=str(y*CELL),
+                   width=str(CELL-2),
+                   height=str(CELL-2),
+                   fill="#ff3b3b")
 
     return tostring(svg).decode()
 
 if __name__ == "__main__":
     grid = get_grid()
-    frames = simulate(grid)
-    svg = make_svg(grid, frames)
+    snake, eaten = simulate(grid)
+    svg = make_svg(grid, snake, eaten)
 
     os.makedirs("dist", exist_ok=True)
     with open("dist/snake.svg", "w") as f:
         f.write(svg)
+    
