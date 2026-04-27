@@ -66,46 +66,49 @@ def simulate(grid):
 
         frames.append((list(snake), set(eaten)))
 
-    frames.append(([(0, 0)], set()))
     return frames
 
 def make_svg(grid, frames):
-    svg = Element("svg", width=str(W*CELL), height=str(H*CELL),
+    svg = Element("svg",
+                  width=str(W*CELL),
+                  height=str(H*CELL),
                   xmlns="http://www.w3.org/2000/svg")
 
     for i, (snake, eaten) in enumerate(frames):
-        g = SubElement(svg, "g", id=f"f{i}", visibility="hidden")
+        g = SubElement(
+            svg,
+            "g",
+            id=f"f{i}",
+            visibility="visible" if i == 0 else "hidden"
+        )
 
+        # 잔디
         for y in range(H):
             for x in range(W):
                 if (x, y) in eaten:
                     continue
                 color = PALETTE[level(grid[y][x])]
-                SubElement(g, "rect",
-                           x=str(x*CELL),
-                           y=str(y*CELL),
-                           width=str(CELL-2),
-                           height=str(CELL-2),
-                           fill=color)
+                SubElement(
+                    g,
+                    "rect",
+                    x=str(x*CELL),
+                    y=str(y*CELL),
+                    width=str(CELL-2),
+                    height=str(CELL-2),
+                    fill=color
+                )
 
+        # 뱀
         for (x, y) in snake:
-            SubElement(g, "rect",
-                       x=str(x*CELL),
-                       y=str(y*CELL),
-                       width=str(CELL-2),
-                       height=str(CELL-2),
-                       fill="#ff3b3b")
-
-    script = SubElement(svg, "script")
-    script.text = f"""
-let start=Date.now(), total={len(frames)};
-setInterval(() => {{
-  let f = Math.floor((Date.now() - start) / 120) % total;
-  for (let i = 0; i < total; i++)
-    document.getElementById('f' + i).setAttribute('visibility', 'hidden');
-  document.getElementById('f' + f).setAttribute('visibility', 'visible');
-}}, 120);
-"""
+            SubElement(
+                g,
+                "rect",
+                x=str(x*CELL),
+                y=str(y*CELL),
+                width=str(CELL-2),
+                height=str(CELL-2),
+                fill="#ff3b3b"
+            )
 
     return tostring(svg).decode()
 
