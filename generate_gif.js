@@ -5,7 +5,7 @@ const { createCanvas, loadImage } = require("canvas");
 
 const WIDTH = 400;
 const HEIGHT = 400;
-const URL = "https://ZuriKo83.github.io/ZuriKo83/";
+const URL = "https://ZuriKo83.github.io/ZuriKo83/repo/index.html";
 
 (async () => {
   const browser = await puppeteer.launch({
