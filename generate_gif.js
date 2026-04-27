@@ -24,7 +24,9 @@ const URL = "https://ZuriKo83.github.io/ZuriKo83/";
   fs.mkdirSync("assets", { recursive: true });
 
   const encoder = new GIFEncoder(WIDTH, HEIGHT);
-  const stream = encoder.createReadStream().pipe(fs.createWriteStream("assets/preview.gif"));
+  const stream = encoder.createReadStream().pipe(
+    fs.createWriteStream("assets/preview.gif")
+  );
 
   encoder.start();
   encoder.setRepeat(0);
@@ -41,7 +43,7 @@ const URL = "https://ZuriKo83.github.io/ZuriKo83/";
     try {
       const key = directions[Math.floor(Math.random() * 4)];
       await page.keyboard.press(key);
-    } catch (e) {}
+    } catch {}
   }, 300);
 
   // 프레임 캡처
@@ -56,10 +58,8 @@ const URL = "https://ZuriKo83.github.io/ZuriKo83/";
 
   await new Promise(resolve => stream.on("finish", resolve));
 
-  // 핵심: interval 종료
   clearInterval(interval);
-
   await browser.close();
 
-  console.log("✅ GIF 생성 완료: assets/preview.gif");
+  console.log("✅ GIF 생성 완료");
 })();
