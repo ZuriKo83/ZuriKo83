@@ -12,7 +12,7 @@ let foods = [];
 const FOOD_COUNT = 5;
 
 // 속도 (낮을수록 빠름, ms)
-let speed = 1;
+let speed = 10;
 
 function spawnFoods(){
   foods = [];
@@ -113,7 +113,7 @@ function gameLoop(time){
   lastTime = time;
   acc += delta;
 
-  if(acc > speed){
+  while (acc >= speed){
     update();
     acc -= speed;
   }
