@@ -5,7 +5,7 @@ const { createCanvas, loadImage } = require("canvas");
 
 const WIDTH = 400;
 const HEIGHT = 400;
-const URL = "https://ZuriKo83.github.io/ZuriKo83/repo/index.html";
+const URL = "https://ZuriKo83.github.io/ZuriKo83/repo/";
 
 (async () => {
   const browser = await puppeteer.launch({
@@ -19,7 +19,11 @@ const URL = "https://ZuriKo83.github.io/ZuriKo83/repo/index.html";
 
   const page = await browser.newPage();
   await page.setViewport({ width: WIDTH, height: HEIGHT });
-  await page.goto(URL, { waitUntil: "networkidle2" });
+
+  await page.goto(URL, { waitUntil: "domcontentloaded" });
+
+  // 🔥 게임 로딩 대기
+  await new Promise(r => setTimeout(r, 2000));
 
   fs.mkdirSync("assets", { recursive: true });
 
@@ -36,7 +40,6 @@ const URL = "https://ZuriKo83.github.io/ZuriKo83/repo/index.html";
   const canvas = createCanvas(WIDTH, HEIGHT);
   const ctx = canvas.getContext("2d");
 
-  // 자동 플레이
   const directions = ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"];
 
   const interval = setInterval(async () => {
@@ -46,12 +49,14 @@ const URL = "https://ZuriKo83.github.io/ZuriKo83/repo/index.html";
     } catch {}
   }, 300);
 
-  // 프레임 캡처
+  // 🔥 프레임 캡처 (딜레이 추가)
   for (let i = 0; i < 40; i++) {
     const buffer = await page.screenshot();
     const img = await loadImage(buffer);
     ctx.drawImage(img, 0, 0);
     encoder.addFrame(ctx);
+
+    await new Promise(r => setTimeout(r, 100)); // 핵심
   }
 
   encoder.finish();
