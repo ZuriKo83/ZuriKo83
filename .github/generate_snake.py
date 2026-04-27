@@ -99,15 +99,15 @@ def make_svg(grid, frames):
                        fill="#ff3b3b")
 
     script = SubElement(svg, "script")
-    script.text = f"""
-    let start=Date.now(), total={len(frames)};
-    setInterval(()=>{
-      let f=Math.floor((Date.now()-start)/120)%total;
-      for(let i=0;i<total;i++)
-        document.getElementById('f'+i).setAttribute('visibility','hidden');
-      document.getElementById('f'+f).setAttribute('visibility','visible');
-    },120);
-    """
+    script.text = """
+let start=Date.now(), total=%d;
+setInterval(()=>{
+  let f=Math.floor((Date.now()-start)/120)%total;
+  for(let i=0;i<total;i++)
+    document.getElementById('f'+i).setAttribute('visibility','hidden');
+  document.getElementById('f'+f).setAttribute('visibility','visible');
+},120);
+""" % (len(frames))
 
     return tostring(svg).decode()
 
