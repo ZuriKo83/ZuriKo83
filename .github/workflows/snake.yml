@@ -23,7 +23,7 @@ jobs:
 
       - run: |
           mkdir -p dist
-          python generate_snake.py
+          python .github/generate_snake.py
 
       - uses: crazy-max/ghaction-github-pages@v4
         with:
