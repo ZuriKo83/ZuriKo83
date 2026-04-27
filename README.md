@@ -149,12 +149,6 @@ CCNA
 
 <div align="center">
 
-<picture>
-<div align="center">
-
 <img src="https://raw.githubusercontent.com/ZuriKo83/ZuriKo83/output/snake.svg" width="100%">
-
-</div>
-</picture>
 
 </div>
