@@ -11,7 +11,7 @@ let foods = [];
 const FOOD_COUNT = 5;
 
 // 속도 (클수록 느림)
-const speed = 4;
+const speed = 2;
 let frame = 0;
 
 // 먹이 생성 (겹침 방지)
