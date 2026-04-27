@@ -141,7 +141,7 @@ CCNA
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ZuriKo83&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=2563eb&icon_color=22c55e&text_color=f8fafc)
+[![Snake Game](assets/preview.gif)](https://ZuriKo83.github.io/레포명)
 
 </div>
 
