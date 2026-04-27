@@ -5,27 +5,25 @@ const size = 20;
 const tile = 20;
 
 let snake = [{x:10,y:10}];
-let dx = 1;
-let dy = 0;
+let dx = 1, dy = 0;
 
 let foods = [];
 const FOOD_COUNT = 5;
 
-// 속도 (낮을수록 빠름, ms)
-let speed = 1000;
+// 속도 (클수록 느림)
+const speed = 7;
+let frame = 0;
 
+// 먹이 생성 (겹침 방지)
 function spawnFoods(){
   foods = [];
-
   while(foods.length < FOOD_COUNT){
-    let f = {
+    const f = {
       x: Math.floor(Math.random()*tile),
       y: Math.floor(Math.random()*tile)
     };
-
-    let overlapSnake = snake.some(s => s.x === f.x && s.y === f.y);
-    let overlapFood = foods.some(ff => ff.x === f.x && ff.y === f.y);
-
+    const overlapSnake = snake.some(s => s.x === f.x && s.y === f.y);
+    const overlapFood = foods.some(ff => ff.x === f.x && ff.y === f.y);
     if(!overlapSnake && !overlapFood){
       foods.push(f);
     }
@@ -34,16 +32,12 @@ function spawnFoods(){
 
 function reset(){
   snake = [{x:10,y:10}];
-  dx = 1;
-  dy = 0;
+  dx = 1; dy = 0;
   spawnFoods();
 }
 
 function update(){
-  let head = {
-    x: snake[0].x + dx,
-    y: snake[0].y + dy
-  };
+  const head = { x: snake[0].x + dx, y: snake[0].y + dy };
 
   // 벽 충돌
   if(head.x < 0 || head.y < 0 || head.x >= tile || head.y >= tile){
@@ -59,8 +53,8 @@ function update(){
 
   snake.unshift(head);
 
+  // 먹이 처리
   let ate = false;
-
   foods = foods.filter(f=>{
     if(head.x === f.x && head.y === f.y){
       ate = true;
@@ -70,6 +64,7 @@ function update(){
   });
 
   if(ate){
+    // 하나 보충
     let newFood;
     do{
       newFood = {
@@ -80,7 +75,6 @@ function update(){
       snake.some(s => s.x === newFood.x && s.y === newFood.y) ||
       foods.some(f => f.x === newFood.x && f.y === newFood.y)
     );
-
     foods.push(newFood);
   } else {
     snake.pop();
@@ -105,17 +99,11 @@ function draw(){
 }
 
 // 프레임 기반 루프
-let lastTime = 0;
-let acc = 0;
+function gameLoop(){
+  frame++;
 
-function gameLoop(time){
-  let delta = time - lastTime;
-  lastTime = time;
-  acc += delta;
-
-  while (acc >= speed){
+  if(frame % speed === 0){
     update();
-    acc -= speed;
   }
 
   draw();
