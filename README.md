@@ -141,7 +141,7 @@ CCNA
 
 <div align="center">
 
-##PLAY SNAKE GAME
+## PLAY SNAKE GAME
 
 [![Snake Game](assets/preview.gif)](https://ZuriKo83.github.io/ZuriKo83/repo)
 
