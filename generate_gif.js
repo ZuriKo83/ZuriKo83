@@ -8,28 +8,50 @@ const HEIGHT = 400;
 const URL = "https://ZuriKo83.github.io/ZuriKo83/";
 
 (async () => {
-  const browser = await puppeteer.launch({ headless: true });
+  const browser = await puppeteer.launch({
+    headless: true,
+    args: [
+      "--no-sandbox",
+      "--disable-setuid-sandbox",
+      "--disable-dev-shm-usage"
+    ]
+  });
+
   const page = await browser.newPage();
   await page.setViewport({ width: WIDTH, height: HEIGHT });
-  await page.goto(URL);
+  await page.goto(URL, { waitUntil: "networkidle2" });
 
   const encoder = new GIFEncoder(WIDTH, HEIGHT);
-  encoder.createReadStream().pipe(fs.createWriteStream("assets/preview.gif"));
+  fs.mkdirSync("assets", { recursive: true });
+  const gifStream = encoder.createReadStream().pipe(fs.createWriteStream("assets/preview.gif"));
 
   encoder.start();
   encoder.setRepeat(0);
   encoder.setDelay(100);
+  encoder.setQuality(10);
 
   const canvas = createCanvas(WIDTH, HEIGHT);
   const ctx = canvas.getContext("2d");
 
-  for(let i=0;i<40;i++){
-    await page.screenshot({ path: "frame.png" });
-    const img = await loadImage("frame.png");
+  // 자동 플레이 (랜덤 방향)
+  const directions = ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"];
+  setInterval(async () => {
+    const key = directions[Math.floor(Math.random() * 4)];
+    await page.keyboard.press(key);
+  }, 300);
+
+  // 프레임 캡처
+  for (let i = 0; i < 40; i++) {
+    const buffer = await page.screenshot();
+    const img = await loadImage(buffer);
     ctx.drawImage(img, 0, 0);
     encoder.addFrame(ctx);
   }
 
   encoder.finish();
+
+  await new Promise(resolve => gifStream.on("finish", resolve));
   await browser.close();
+
+  console.log("✅ GIF 생성 완료: assets/preview.gif");
 })();
