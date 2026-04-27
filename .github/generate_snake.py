@@ -4,7 +4,7 @@ from xml.etree.ElementTree import Element, SubElement, tostring
 
 USER = "ZuriKo83"
 W, H = 53, 7
-CELL = 12
+CELL = 16
 
 PALETTE = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"]
 
@@ -37,7 +37,6 @@ def get_grid():
     )
 
     data = res.json()
-
     weeks = data["data"]["user"]["contributionsCollection"]["contributionCalendar"]["weeks"]
 
     g = [[0]*W for _ in range(H)]
@@ -64,12 +63,17 @@ def path():
             p.append((x, y))
     return p
 
-def simulate(grid):
+def simulate_frames(grid):
     p = path()
+    frames = []
+
     snake = []
     eaten = set()
 
-    for pos in p:
+    LIMIT = 150
+
+    for i in range(LIMIT):
+        pos = p[i]
         x, y = pos
         snake.append(pos)
 
@@ -79,51 +83,64 @@ def simulate(grid):
             if len(snake) > 1:
                 snake.pop(0)
 
-    return snake, eaten
+        frames.append((list(snake), set(eaten)))
 
-def make_svg(grid, snake, eaten):
+    return frames
+
+def make_svg(grid, frames):
     svg = Element("svg",
-                  width=str(W*CELL),
-                  height=str(H*CELL),
+                  width="100%",
+                  height="220",
+                  viewBox=f"0 0 {W*CELL} {H*CELL}",
                   xmlns="http://www.w3.org/2000/svg")
 
-    # 배경
     SubElement(svg, "rect",
                x="0", y="0",
                width=str(W*CELL),
                height=str(H*CELL),
                fill="#0d1117")
 
-    # 잔디
-    for y in range(H):
-        for x in range(W):
-            if (x, y) in eaten:
-                continue
-            color = PALETTE[level(grid[y][x])]
-            SubElement(svg, "rect",
+    duration = len(frames) * 0.08
+
+    for i, (snake, eaten) in enumerate(frames):
+        g = SubElement(svg, "g", opacity="0")
+
+        SubElement(g, "animate",
+                   attributeName="opacity",
+                   values="0;1;0",
+                   dur=f"{duration}s",
+                   begin=f"{i*0.08}s",
+                   repeatCount="indefinite")
+
+        # 잔디
+        for y in range(H):
+            for x in range(W):
+                if (x, y) in eaten:
+                    continue
+                color = PALETTE[level(grid[y][x])]
+                SubElement(g, "rect",
+                           x=str(x*CELL),
+                           y=str(y*CELL),
+                           width=str(CELL-2),
+                           height=str(CELL-2),
+                           fill=color)
+
+        # 뱀
+        for (x, y) in snake:
+            SubElement(g, "rect",
                        x=str(x*CELL),
                        y=str(y*CELL),
                        width=str(CELL-2),
                        height=str(CELL-2),
-                       fill=color)
-
-    # 뱀
-    for (x, y) in snake:
-        SubElement(svg, "rect",
-                   x=str(x*CELL),
-                   y=str(y*CELL),
-                   width=str(CELL-2),
-                   height=str(CELL-2),
-                   fill="#ff3b3b")
+                       fill="#ff3b3b")
 
     return tostring(svg).decode()
 
 if __name__ == "__main__":
     grid = get_grid()
-    snake, eaten = simulate(grid)
-    svg = make_svg(grid, snake, eaten)
+    frames = simulate_frames(grid)
+    svg = make_svg(grid, frames)
 
     os.makedirs("dist", exist_ok=True)
     with open("dist/snake.svg", "w") as f:
         f.write(svg)
-    
