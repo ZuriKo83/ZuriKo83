@@ -11,7 +11,9 @@ let dy = 0;
 let foods = [];
 const FOOD_COUNT = 5;
 
-// 랜덤 먹이 생성 (겹침 방지)
+// 속도 (낮을수록 빠름, ms)
+let speed = 60;
+
 function spawnFoods(){
   foods = [];
 
@@ -37,24 +39,7 @@ function reset(){
   spawnFoods();
 }
 
-function draw(){
-  // 배경
-  ctx.fillStyle = "#0d1117";
-  ctx.fillRect(0,0,400,400);
-
-  // 먹이 (빨강)
-  ctx.fillStyle = "#ff3b3b";
-  foods.forEach(f=>{
-    ctx.fillRect(f.x*size, f.y*size, size-2, size-2);
-  });
-
-  // 뱀 (초록)
-  ctx.fillStyle = "#22c55e";
-  snake.forEach(s=>{
-    ctx.fillRect(s.x*size, s.y*size, size-2, size-2);
-  });
-
-  // 머리 이동
+function update(){
   let head = {
     x: snake[0].x + dx,
     y: snake[0].y + dy
@@ -74,7 +59,6 @@ function draw(){
 
   snake.unshift(head);
 
-  // 먹이 먹기
   let ate = false;
 
   foods = foods.filter(f=>{
@@ -86,7 +70,6 @@ function draw(){
   });
 
   if(ate){
-    // 먹이 하나 추가 (유지)
     let newFood;
     do{
       newFood = {
@@ -104,8 +87,40 @@ function draw(){
   }
 }
 
-// 속도 조절 (느리게)
-setInterval(draw, 10);
+function draw(){
+  ctx.fillStyle = "#0d1117";
+  ctx.fillRect(0,0,400,400);
+
+  // 먹이 (빨강)
+  ctx.fillStyle = "#ff3b3b";
+  foods.forEach(f=>{
+    ctx.fillRect(f.x*size, f.y*size, size-2, size-2);
+  });
+
+  // 뱀 (초록)
+  ctx.fillStyle = "#22c55e";
+  snake.forEach(s=>{
+    ctx.fillRect(s.x*size, s.y*size, size-2, size-2);
+  });
+}
+
+// 프레임 기반 루프
+let lastTime = 0;
+let acc = 0;
+
+function gameLoop(time){
+  let delta = time - lastTime;
+  lastTime = time;
+  acc += delta;
+
+  if(acc > speed){
+    update();
+    acc = 0;
+  }
+
+  draw();
+  requestAnimationFrame(gameLoop);
+}
 
 // 방향키
 document.addEventListener("keydown", e=>{
@@ -115,5 +130,6 @@ document.addEventListener("keydown", e=>{
   if(e.key==="ArrowRight" && dx===0){dx=1;dy=0;}
 });
 
-// 초기 실행
+// 시작
 spawnFoods();
+requestAnimationFrame(gameLoop);
