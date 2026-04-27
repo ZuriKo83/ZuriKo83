@@ -21,9 +21,10 @@ const URL = "https://ZuriKo83.github.io/ZuriKo83/";
   await page.setViewport({ width: WIDTH, height: HEIGHT });
   await page.goto(URL, { waitUntil: "networkidle2" });
 
-  const encoder = new GIFEncoder(WIDTH, HEIGHT);
   fs.mkdirSync("assets", { recursive: true });
-  const gifStream = encoder.createReadStream().pipe(fs.createWriteStream("assets/preview.gif"));
+
+  const encoder = new GIFEncoder(WIDTH, HEIGHT);
+  const stream = encoder.createReadStream().pipe(fs.createWriteStream("assets/preview.gif"));
 
   encoder.start();
   encoder.setRepeat(0);
@@ -33,11 +34,14 @@ const URL = "https://ZuriKo83.github.io/ZuriKo83/";
   const canvas = createCanvas(WIDTH, HEIGHT);
   const ctx = canvas.getContext("2d");
 
-  // 자동 플레이 (랜덤 방향)
+  // 자동 플레이
   const directions = ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"];
-  setInterval(async () => {
-    const key = directions[Math.floor(Math.random() * 4)];
-    await page.keyboard.press(key);
+
+  const interval = setInterval(async () => {
+    try {
+      const key = directions[Math.floor(Math.random() * 4)];
+      await page.keyboard.press(key);
+    } catch (e) {}
   }, 300);
 
   // 프레임 캡처
@@ -50,7 +54,11 @@ const URL = "https://ZuriKo83.github.io/ZuriKo83/";
 
   encoder.finish();
 
-  await new Promise(resolve => gifStream.on("finish", resolve));
+  await new Promise(resolve => stream.on("finish", resolve));
+
+  // 핵심: interval 종료
+  clearInterval(interval);
+
   await browser.close();
 
   console.log("✅ GIF 생성 완료: assets/preview.gif");
