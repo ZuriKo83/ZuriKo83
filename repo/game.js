@@ -5,7 +5,8 @@ const size = 20;
 const tile = 20;
 
 let snake = [{x:10,y:10}];
-let food = spawnFood();
+let foods = [];
+const FOOD_COUNT = 3;
 
 let dx = 1;
 let dy = 0;
