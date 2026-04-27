@@ -151,6 +151,6 @@ CCNA
 
 ## 🐍 Snake Game
 
-[👉 Play Game](https://ZuriKo83.github.io/ZuriKo83/repo/)
+[![Snake](assets/preview.gif)](https://ZuriKo83.github.io/ZuriKo83/repo/index.html)
 
 </div>
