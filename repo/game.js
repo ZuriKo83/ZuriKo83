@@ -65,7 +65,7 @@ function draw(){
   }
 }
 
-setInterval(draw, 100);
+setInterval(draw, 180);
 
 // 방향키
 document.addEventListener("keydown", e=>{
