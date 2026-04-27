@@ -16,9 +16,7 @@ def level(v):
     return 4
 
 def get_grid():
-    headers = {
-        "User-Agent": "Mozilla/5.0"
-    }
+    headers = {"User-Agent": "Mozilla/5.0"}
 
     res = requests.get(
         f"https://github.com/users/{USER}/contributions",
@@ -68,7 +66,7 @@ def simulate(grid):
 
         frames.append((list(snake), set(eaten)))
 
-    frames.append(([(0,0)], set()))
+    frames.append(([(0, 0)], set()))
     return frames
 
 def make_svg(grid, frames):
@@ -99,15 +97,15 @@ def make_svg(grid, frames):
                        fill="#ff3b3b")
 
     script = SubElement(svg, "script")
-    script.text = """
-let start=Date.now(), total=%d;
-setInterval(()=>{
-  let f=Math.floor((Date.now()-start)/120)%total;
-  for(let i=0;i<total;i++)
-    document.getElementById('f'+i).setAttribute('visibility','hidden');
-  document.getElementById('f'+f).setAttribute('visibility','visible');
-},120);
-""" % (len(frames))
+    script.text = f"""
+let start=Date.now(), total={len(frames)};
+setInterval(() => {{
+  let f = Math.floor((Date.now() - start) / 120) % total;
+  for (let i = 0; i < total; i++)
+    document.getElementById('f' + i).setAttribute('visibility', 'hidden');
+  document.getElementById('f' + f).setAttribute('visibility', 'visible');
+}}, 120);
+"""
 
     return tostring(svg).decode()
 
