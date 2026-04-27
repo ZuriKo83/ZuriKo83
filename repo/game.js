@@ -105,7 +105,7 @@ function draw(){
 }
 
 // 속도 조절 (느리게)
-setInterval(draw, 120);
+setInterval(draw, 100);
 
 // 방향키
 document.addEventListener("keydown", e=>{
