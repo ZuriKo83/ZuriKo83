@@ -3,25 +3,10 @@ from xml.etree.ElementTree import Element, SubElement, tostring
 
 W, H = 53, 7
 CELL = 16
-DENSITY = 0.35   # 잔디 밀도
-STEPS = 220      # 프레임 수
-
-PALETTE = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"]
+STEPS = 120
 
 def gen_grid():
-    g = [[0]*W for _ in range(H)]
-    for y in range(H):
-        for x in range(W):
-            if random.random() < DENSITY:
-                g[y][x] = random.randint(1, 12)
-    return g
-
-def level(v):
-    if v == 0: return 0
-    if v < 3: return 1
-    if v < 6: return 2
-    if v < 10: return 3
-    return 4
+    return {(random.randint(0,W-1), random.randint(0,H-1)) for _ in range(80)}
 
 def path():
     p = []
@@ -32,26 +17,26 @@ def path():
     return p
 
 def simulate_frames():
-    grid = gen_grid()
     p = path()
-    snake, eaten = [], set()
+    grid = gen_grid()
+
+    snake = []
+    eaten = set()
     frames = []
 
     for i in range(STEPS):
         pos = p[i % len(p)]
-        x,y = pos
         snake.append(pos)
 
-        if grid[y][x] > 0 and pos not in eaten:
+        if pos in grid and pos not in eaten:
             eaten.add(pos)
         else:
             if len(snake) > 1:
                 snake.pop(0)
 
-        frames.append((list(snake), set(eaten), grid))
+        frames.append((list(snake), set(grid - eaten)))
 
-        # 다 먹으면 초기화
-        if len(eaten) > W*H*0.6:
+        if len(eaten) > 50:
             grid = gen_grid()
             eaten.clear()
             snake = [pos]
@@ -60,50 +45,60 @@ def simulate_frames():
 
 def make_svg(frames):
     svg = Element("svg",
-                  width="100%",
-                  height="220",
-                  viewBox=f"0 0 {W*CELL} {H*CELL}",
-                  xmlns="http://www.w3.org/2000/svg")
+        width="100%",
+        height="220",
+        viewBox=f"0 0 {W*CELL} {H*CELL}",
+        xmlns="http://www.w3.org/2000/svg"
+    )
 
     SubElement(svg, "rect",
-               x="0", y="0",
-               width=str(W*CELL),
-               height=str(H*CELL),
-               fill="#0d1117")
+        x="0", y="0",
+        width=str(W*CELL),
+        height=str(H*CELL),
+        fill="#0d1117"
+    )
 
-    dur = len(frames) * 0.07
+    total = len(frames)
+    dur = total * 0.08
 
-    for i,(snake,eaten,grid) in enumerate(frames):
-        g = SubElement(svg, "g", opacity="0")
+    for i,(snake,food) in enumerate(frames):
+        g = SubElement(svg, "g")
 
-        SubElement(g, "animate",
-                   attributeName="opacity",
-                   values="0;1;0",
-                   dur=f"{dur}s",
-                   begin=f"{i*0.07}s",
-                   repeatCount="indefinite")
+        # 핵심: 프레임 하나씩 켜지게
+        SubElement(g, "set",
+            attributeName="display",
+            to="inline",
+            begin=f"{i*0.08}s",
+            dur="0.08s",
+            repeatCount="indefinite"
+        )
 
-        # 잔디
-        for y in range(H):
-            for x in range(W):
-                if (x,y) in eaten:
-                    continue
-                color = PALETTE[level(grid[y][x])]
-                SubElement(g, "rect",
-                           x=str(x*CELL),
-                           y=str(y*CELL),
-                           width=str(CELL-2),
-                           height=str(CELL-2),
-                           fill=color)
+        SubElement(g, "set",
+            attributeName="display",
+            to="none",
+            begin=f"{(i*0.08)+0.08}s",
+            repeatCount="indefinite"
+        )
 
-        # 뱀
+        # 빨간 먹이
+        for (x,y) in food:
+            SubElement(g, "rect",
+                x=str(x*CELL),
+                y=str(y*CELL),
+                width=str(CELL-2),
+                height=str(CELL-2),
+                fill="#ff3b3b"
+            )
+
+        # 초록 뱀
         for (x,y) in snake:
             SubElement(g, "rect",
-                       x=str(x*CELL),
-                       y=str(y*CELL),
-                       width=str(CELL-2),
-                       height=str(CELL-2),
-                       fill="#ff3b3b")
+                x=str(x*CELL),
+                y=str(y*CELL),
+                width=str(CELL-2),
+                height=str(CELL-2),
+                fill="#22c55e"
+            )
 
     return tostring(svg).decode()
 
