@@ -11,8 +11,8 @@ let foods = [];
 const FOOD_COUNT = 5;
 
 // 속도 (클수록 느림)
-const speed = 7;
-let frame = 1;
+const speed = 3;
+let frame = 3;
 
 // 먹이 생성 (겹침 방지)
 function spawnFoods(){
@@ -100,10 +100,11 @@ function draw(){
 
 // 프레임 기반 루프
 function gameLoop(){
-  frame++;
-
-  if(frame % speed === 0){
-    update();
+  for(let i = 0; i < boost; i++){
+    frame++;
+    if(frame % speed === 0){
+      update();
+    }
   }
 
   draw();
