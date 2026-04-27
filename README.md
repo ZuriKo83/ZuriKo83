@@ -149,6 +149,8 @@ CCNA
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/ZuriKo83/ZuriKo83/output/snake.svg" width="100%">
+## 🐍 Snake Game
+
+[👉 Play Game](https://ZuriKo83.github.io/ZuriKo83/repo/)
 
 </div>
