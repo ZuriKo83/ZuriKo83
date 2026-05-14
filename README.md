@@ -118,8 +118,9 @@
 |:--|:--|:--:|
 | [Semi_project1](https://github.com/Cy4Crew/Semi_project1) | Threat Intelligence Platform for Monitoring and Alerting | ⚡ Active |
 | [Semi_project2](https://github.com/Cy4Crew/Semi_project2) | Malware Sandbox for Dynamic Behavior Analysis | ⚡ Active |
-| [Semi_project3](https://github.com/Cy4Crew/Semi_project3) | Security Port Scanning Platform | 🚧 In Progress |
+| [Semi_project3](https://github.com/Cy4Crew/Semi_project3) | Security Port Scanning Platform | ⚡ Active |
 | [CarTrack](https://github.com/ZuriKo83/CarTrack.git) | Mobile Car Speed Tracking App  | ⚡ Active |
+| [Preparing]() | ??? | 🚧 In Progress |
 
 </div>
 
