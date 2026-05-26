@@ -120,7 +120,7 @@
 | [Semi_project2](https://github.com/Cy4Crew/Semi_project2) | Malware Sandbox for Dynamic Behavior Analysis | ⚡ Active |
 | [Semi_project3](https://github.com/Cy4Crew/Semi_project3) | Security Port Scanning Platform | ⚡ Active |
 | [CarTrack](https://github.com/ZuriKo83/CarTrack.git) | Mobile Car Speed Tracking App  | ⚡ Active |
-| [Preparing]() | ??? | 🚧 In Progress |
+| [LogSight](https://github.com/FinalPro17/Final_project.git) | Log Scanning System | 🚧 In Progress |
 
 </div>
 
